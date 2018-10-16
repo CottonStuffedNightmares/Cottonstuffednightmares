@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: bfb441842ed784c42992b61f26906995
+timeCreated: 1538459675
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: pasted__pasted__pCube49
+    100002: pasted__pasted__pCube50
+    100004: pasted__pasted__pCube51
+    100006: pasted__pasted__pCube52
+    100008: pasted__pasted__pCube53
+    100010: pCube1
+    100012: pCube47
+    100014: pCube48
+    100016: polySurface63
+    100018: polySurface64
+    100020: polySurface65
+    100022: polySurface66
+    100024: //RootNode
+    100026: Succulent2
+    100028: Succulent3
+    100030: succulent3
+    100032: succulent4
+    100034: succulent_tall_plant1
+    100036: succulent_tall_plant2
+    100038: succulent_tall_plant3
+    100040: succulent_tall_plant4
+    400000: pasted__pasted__pCube49
+    400002: pasted__pasted__pCube50
+    400004: pasted__pasted__pCube51
+    400006: pasted__pasted__pCube52
+    400008: pasted__pasted__pCube53
+    400010: pCube1
+    400012: pCube47
+    400014: pCube48
+    400016: polySurface63
+    400018: polySurface64
+    400020: polySurface65
+    400022: polySurface66
+    400024: //RootNode
+    400026: Succulent2
+    400028: Succulent3
+    400030: succulent3
+    400032: succulent4
+    400034: succulent_tall_plant1
+    400036: succulent_tall_plant2
+    400038: succulent_tall_plant3
+    400040: succulent_tall_plant4
+    2100000: Cactus_Yellow
+    2100002: Tall_Succulent1
+    2100004: Succulent_purple
+    2100006: Cactus
+    2100008: Vasepot_small
+    2100010: Succulent_green
+    2100012: Tall_Succulent
+    2300000: pasted__pasted__pCube49
+    2300002: pasted__pasted__pCube50
+    2300004: pasted__pasted__pCube51
+    2300006: pasted__pasted__pCube52
+    2300008: pasted__pasted__pCube53
+    2300010: pCube1
+    2300012: pCube47
+    2300014: pCube48
+    2300016: polySurface63
+    2300018: polySurface64
+    2300020: polySurface65
+    2300022: polySurface66
+    2300024: Succulent2
+    2300026: Succulent3
+    2300028: succulent3
+    2300030: succulent4
+    2300032: succulent_tall_plant1
+    2300034: succulent_tall_plant2
+    2300036: succulent_tall_plant3
+    2300038: succulent_tall_plant4
+    3300000: pasted__pasted__pCube49
+    3300002: pasted__pasted__pCube50
+    3300004: pasted__pasted__pCube51
+    3300006: pasted__pasted__pCube52
+    3300008: pasted__pasted__pCube53
+    3300010: pCube1
+    3300012: pCube47
+    3300014: pCube48
+    3300016: polySurface63
+    3300018: polySurface64
+    3300020: polySurface65
+    3300022: polySurface66
+    3300024: Succulent2
+    3300026: Succulent3
+    3300028: succulent3
+    3300030: succulent4
+    3300032: succulent_tall_plant1
+    3300034: succulent_tall_plant2
+    3300036: succulent_tall_plant3
+    3300038: succulent_tall_plant4
+    4300000: pasted__pasted__pCube49
+    4300002: succulent_tall_plant1
+    4300004: succulent3
+    4300006: polySurface64
+    4300008: succulent_tall_plant3
+    4300010: succulent_tall_plant4
+    4300012: pCube1
+    4300014: pasted__pasted__pCube50
+    4300016: Succulent2
+    4300018: succulent4
+    4300020: succulent_tall_plant2
+    4300022: polySurface65
+    4300024: pCube47
+    4300026: polySurface63
+    4300028: pasted__pasted__pCube51
+    4300030: pasted__pasted__pCube53
+    4300032: pasted__pasted__pCube52
+    4300034: polySurface66
+    4300036: Succulent3
+    4300038: pCube48
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

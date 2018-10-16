@@ -1,0 +1,189 @@
+fileFormatVersion: 2
+guid: 29b82f3f3d807864bb6b16111720c893
+timeCreated: 1539569384
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Dishwasher_001
+    100002: Fridge_001
+    100004: K_Counter_001
+    100006: K_Counter_002
+    100008: K_Counter_003
+    100010: K_Fan_001
+    100012: //RootNode
+    100014: Oven_001
+    100016: Sink_001
+    100018: Wall_Cupboard_001
+    400000: Dishwasher_001
+    400002: Fridge_001
+    400004: K_Counter_001
+    400006: K_Counter_002
+    400008: K_Counter_003
+    400010: K_Fan_001
+    400012: //RootNode
+    400014: Oven_001
+    400016: Sink_001
+    400018: Wall_Cupboard_001
+    2100000: Fridge_MAT
+    2100002: K_Counter_001_MAT
+    2100004: K_Counter_002_MAT
+    2100006: K_Counter_004_MAT
+    2100008: Wall_Cupboard_001_MAT
+    2100010: Dishwasher_001_MAT
+    2100012: Sink_001_MAT
+    2100014: Oven_001_MAT
+    2100016: K_Fan_001_MAT
+    2300000: Dishwasher_001
+    2300002: Fridge_001
+    2300004: K_Counter_001
+    2300006: K_Counter_002
+    2300008: K_Counter_003
+    2300010: K_Fan_001
+    2300012: Oven_001
+    2300014: Sink_001
+    2300016: Wall_Cupboard_001
+    3300000: Dishwasher_001
+    3300002: Fridge_001
+    3300004: K_Counter_001
+    3300006: K_Counter_002
+    3300008: K_Counter_003
+    3300010: K_Fan_001
+    3300012: Oven_001
+    3300014: Sink_001
+    3300016: Wall_Cupboard_001
+    4300000: Fridge_001
+    4300002: K_Counter_001
+    4300004: K_Counter_002
+    4300006: K_Counter_003
+    4300008: Wall_Cupboard_001
+    4300010: Dishwasher_001
+    4300012: Sink_001
+    4300014: Oven_001
+    4300016: K_Fan_001
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dishwasher_001_MAT
+    second: {fileID: 2100000, guid: b3365ab0b66ca714b90e889b01a46785, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fridge_MAT
+    second: {fileID: 2100000, guid: c6490dde0afcf7f468a206ad1f15cddc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: K_Counter_001_MAT
+    second: {fileID: 2100000, guid: 54b073bc09a1b8743b5c820002b6e960, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: K_Counter_002_MAT
+    second: {fileID: 2100000, guid: 7adc127e5d22d9d428af48f0c6c25049, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: K_Counter_004_MAT
+    second: {fileID: 2100000, guid: 0646ef08a2a294d49ae36ef6fd842615, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: K_Fan_001_MAT
+    second: {fileID: 2100000, guid: bfe435730404a90478a05140a0f7e1c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Oven_001_MAT
+    second: {fileID: 2100000, guid: f49ee1fdcf2bf8e4ea198aa3429f265d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sink_001_MAT
+    second: {fileID: 2100000, guid: e30113e990703324e8e8eaa4a12333a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall_Cupboard_001_MAT
+    second: {fileID: 2100000, guid: ec7b832de580f7b4392ff689e39a66a5, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

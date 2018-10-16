@@ -1,0 +1,286 @@
+fileFormatVersion: 2
+guid: fdcaa30379df936499f3fe2de3055f69
+timeCreated: 1535416077
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Jnt_Ankle_L
+    100002: Jnt_Ankle_R
+    100004: Jnt_Clavical_L
+    100006: Jnt_Clavical_R
+    100008: Jnt_Elbow_L
+    100010: Jnt_Elbow_R
+    100012: Jnt_Eye_L
+    100014: Jnt_Eye_R
+    100016: Jnt_Finger1_Knuckle_L
+    100018: Jnt_Finger1_Knuckle_R
+    100020: Jnt_Finger1_Tip_L
+    100022: Jnt_Finger1_Tip_R
+    100024: Jnt_Finger2_Knuckle_L
+    100026: Jnt_Finger2_Knuckle_R
+    100028: Jnt_Finger2_Tip_L
+    100030: Jnt_Finger2_Tip_R
+    100032: Jnt_Finger3_Knuckle_L
+    100034: Jnt_Finger3_Knuckle_R
+    100036: Jnt_Finger3_Tip_L
+    100038: Jnt_Finger3_Tip_R
+    100040: Jnt_Foot_L
+    100042: Jnt_Foot_R
+    100044: Jnt_Head
+    100046: Jnt_Heel_L
+    100048: Jnt_Heel_R
+    100050: Jnt_Hip_L
+    100052: Jnt_Hip_R
+    100054: Jnt_Jaw_Base
+    100056: Jnt_Jaw_Tip
+    100058: Jnt_Knee_L
+    100060: Jnt_Knee_R
+    100062: Jnt_Neck
+    100064: Jnt_Palm_L
+    100066: Jnt_Palm_R
+    100068: Jnt_Shoulder_L
+    100070: Jnt_Shoulder_R
+    100072: Jnt_Spine_1
+    100074: Jnt_Spine_2
+    100076: Jnt_Spine_3
+    100078: Jnt_Tail_Head
+    100080: Jnt_Toe1_Knuckle_01_L
+    100082: Jnt_Toe1_Knuckle_01_R
+    100084: Jnt_Toe1_Knuckle_02_L
+    100086: Jnt_Toe1_Knuckle_02_R
+    100088: Jnt_Toe1_Knuckle_03_L
+    100090: Jnt_Toe1_Knuckle_03_R
+    100092: Jnt_Toe1_Tip_L
+    100094: Jnt_Toe1_Tip_R
+    100096: Jnt_Toe2_Knuckle_01_L
+    100098: Jnt_Toe2_Knuckle_01_R
+    100100: Jnt_Toe2_Knuckle_02_L
+    100102: Jnt_Toe2_Knuckle_02_R
+    100104: Jnt_Toe2_Knuckle_03_L
+    100106: Jnt_Toe2_Knuckle_03_R
+    100108: Jnt_Toe2_Tip_L
+    100110: Jnt_Toe2_Tip_R
+    100112: Jnt_Toe3_Knuckle_01_L
+    100114: Jnt_Toe3_Knuckle_01_R
+    100116: Jnt_Toe3_Knuckle_02_L
+    100118: Jnt_Toe3_Knuckle_02_R
+    100120: Jnt_Toe3_Knuckle_03_L
+    100122: Jnt_Toe3_Knuckle_03_R
+    100124: Jnt_Toe3_Tip_L
+    100126: Jnt_Toe3_Tip_R
+    100128: Jnt_Wrist_L
+    100130: Jnt_Wrist_R
+    100132: joint10
+    100134: joint11
+    100136: joint12
+    100138: joint8
+    100140: joint9
+    100142: Pelvis
+    100144: Sk_DemonCrocodile_01_Physics
+    100146: //RootNode
+    100148: transform1
+    400000: Jnt_Ankle_L
+    400002: Jnt_Ankle_R
+    400004: Jnt_Clavical_L
+    400006: Jnt_Clavical_R
+    400008: Jnt_Elbow_L
+    400010: Jnt_Elbow_R
+    400012: Jnt_Eye_L
+    400014: Jnt_Eye_R
+    400016: Jnt_Finger1_Knuckle_L
+    400018: Jnt_Finger1_Knuckle_R
+    400020: Jnt_Finger1_Tip_L
+    400022: Jnt_Finger1_Tip_R
+    400024: Jnt_Finger2_Knuckle_L
+    400026: Jnt_Finger2_Knuckle_R
+    400028: Jnt_Finger2_Tip_L
+    400030: Jnt_Finger2_Tip_R
+    400032: Jnt_Finger3_Knuckle_L
+    400034: Jnt_Finger3_Knuckle_R
+    400036: Jnt_Finger3_Tip_L
+    400038: Jnt_Finger3_Tip_R
+    400040: Jnt_Foot_L
+    400042: Jnt_Foot_R
+    400044: Jnt_Head
+    400046: Jnt_Heel_L
+    400048: Jnt_Heel_R
+    400050: Jnt_Hip_L
+    400052: Jnt_Hip_R
+    400054: Jnt_Jaw_Base
+    400056: Jnt_Jaw_Tip
+    400058: Jnt_Knee_L
+    400060: Jnt_Knee_R
+    400062: Jnt_Neck
+    400064: Jnt_Palm_L
+    400066: Jnt_Palm_R
+    400068: Jnt_Shoulder_L
+    400070: Jnt_Shoulder_R
+    400072: Jnt_Spine_1
+    400074: Jnt_Spine_2
+    400076: Jnt_Spine_3
+    400078: Jnt_Tail_Head
+    400080: Jnt_Toe1_Knuckle_01_L
+    400082: Jnt_Toe1_Knuckle_01_R
+    400084: Jnt_Toe1_Knuckle_02_L
+    400086: Jnt_Toe1_Knuckle_02_R
+    400088: Jnt_Toe1_Knuckle_03_L
+    400090: Jnt_Toe1_Knuckle_03_R
+    400092: Jnt_Toe1_Tip_L
+    400094: Jnt_Toe1_Tip_R
+    400096: Jnt_Toe2_Knuckle_01_L
+    400098: Jnt_Toe2_Knuckle_01_R
+    400100: Jnt_Toe2_Knuckle_02_L
+    400102: Jnt_Toe2_Knuckle_02_R
+    400104: Jnt_Toe2_Knuckle_03_L
+    400106: Jnt_Toe2_Knuckle_03_R
+    400108: Jnt_Toe2_Tip_L
+    400110: Jnt_Toe2_Tip_R
+    400112: Jnt_Toe3_Knuckle_01_L
+    400114: Jnt_Toe3_Knuckle_01_R
+    400116: Jnt_Toe3_Knuckle_02_L
+    400118: Jnt_Toe3_Knuckle_02_R
+    400120: Jnt_Toe3_Knuckle_03_L
+    400122: Jnt_Toe3_Knuckle_03_R
+    400124: Jnt_Toe3_Tip_L
+    400126: Jnt_Toe3_Tip_R
+    400128: Jnt_Wrist_L
+    400130: Jnt_Wrist_R
+    400132: joint10
+    400134: joint11
+    400136: joint12
+    400138: joint8
+    400140: joint9
+    400142: Pelvis
+    400144: Sk_DemonCrocodile_01_Physics
+    400146: //RootNode
+    400148: transform1
+    2100000: StingrayPBS1
+    4300000: Sk_DemonCrocodile_01_Physics
+    9500000: //RootNode
+    13700000: Sk_DemonCrocodile_01_Physics
+  externalObjects:
+  - first:
+      type: UnityEngine:Cubemap
+      assembly: UnityEngine.CoreModule
+      name: diffuse_cube
+    second: {fileID: 8900000, guid: 9109ba511a860d94f926fe3766285355, type: 3}
+  - first:
+      type: UnityEngine:Cubemap
+      assembly: UnityEngine.CoreModule
+      name: specular_cube
+    second: {fileID: 8900000, guid: 465ae1b7b0f4b674b8cbfacc5262ed0b, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StingrayPBS1
+    second: {fileID: 2100000, guid: d2678a7d8d283a5498bd5cb828d46963, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Demon_Crocodile_StingrayPBS2_AO
+    second: {fileID: 2800000, guid: d4e537fd5c24bbb4cb8c665a66eeeee1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Demon_Crocodile_StingrayPBS2_BaseColor
+    second: {fileID: 2800000, guid: 76193c0cb14a8c84299fb906a1c0664c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Demon_Crocodile_StingrayPBS2_Emissive
+    second: {fileID: 2800000, guid: 8981b6bdb33ddd3468293b2e496202b6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Demon_Crocodile_StingrayPBS2_Metallic
+    second: {fileID: 2800000, guid: f4fe4431edbf6e3438725e4c068058ed, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Demon_Crocodile_StingrayPBS2_Normal
+    second: {fileID: 2800000, guid: 250a8cbe4dcb0f543a630bfa81064d75, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Demon_Crocodile_StingrayPBS2_Roughness
+    second: {fileID: 2800000, guid: 359579037d148d64d908005d0e87c0ca, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

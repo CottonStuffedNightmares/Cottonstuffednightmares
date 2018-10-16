@@ -1,0 +1,407 @@
+fileFormatVersion: 2
+guid: 27e2cca30fec843479f57505d8ccc142
+timeCreated: 1537313866
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: _control
+    100004: _control 1
+    100006: _null
+    100008: Ctrl_Elbow_L
+    100010: Ctrl_Elbow_R
+    100012: Ctrl_Elbow_R 1
+    100014: Ctrl_Fist_L
+    100016: Ctrl_Fist_L 1
+    100018: Ctrl_Fist_R
+    100020: Ctrl_Fist_R 1
+    100022: Ctrl_Foot_L
+    100024: Ctrl_Foot_L 1
+    100026: Ctrl_Foot_R
+    100028: Ctrl_Foot_R 1
+    100030: Ctrl_Forearm_L
+    100032: Ctrl_Forearm_L 1
+    100034: Ctrl_Forearm_R
+    100036: Ctrl_Forearm_R 1
+    100038: Ctrl_Jaw
+    100040: Ctrl_Jaw 1
+    100042: Ctrl_Knee_L
+    100044: Ctrl_Knee_R
+    100046: Ctrl_Neck
+    100048: Ctrl_Neck 1
+    100050: Ctrl_Pelvis
+    100052: Ctrl_Pelvis 1
+    100054: Ctrl_Shoulder_L
+    100056: Ctrl_Shoulder_L 1
+    100058: Ctrl_Shoulder_R
+    100060: Ctrl_Shoulder_R 1
+    100062: Ctrl_Spine01
+    100064: Ctrl_Spine01 1
+    100066: Ctrl_Spine02
+    100068: Ctrl_Spine02 1
+    100070: Ctrl_Spine03
+    100072: Ctrl_Spine03 1
+    100074: Ctrl_Spine04
+    100076: Ctrl_Spine04 1
+    100078: Ctrl_Spine05
+    100080: Ctrl_Spine05 1
+    100082: Ctrl_Spine06
+    100084: Ctrl_Spine06 1
+    100086: Ctrl_Tie
+    100088: Ctrl_Tie 1
+    100090: Ctrl_Wrist_L
+    100092: Ctrl_Wrist_L 1
+    100094: Ctrl_Wrist_R
+    100096: Ctrl_Wrist_R 1
+    100098: Jnt_Ankle_L
+    100100: Jnt_Ankle_R
+    100102: Jnt_Clavical_L
+    100104: Jnt_Clavical_R
+    100106: Jnt_Elbow_L
+    100108: Jnt_Elbow_R
+    100110: Jnt_Eye
+    100112: Jnt_Fngr01_Knck01
+    100114: Jnt_Fngr01_Knck01 1
+    100116: Jnt_Fngr01_Knck02
+    100118: Jnt_Fngr01_Knck02 1
+    100120: Jnt_Fngr01_Knck03
+    100122: Jnt_Fngr01_Knck03 1
+    100124: Jnt_Fngr02_Knck01
+    100126: Jnt_Fngr02_Knck01 1
+    100128: Jnt_Fngr02_Knck02
+    100130: Jnt_Fngr02_Knck02 1
+    100132: Jnt_Fngr02_Knck03
+    100134: Jnt_Fngr02_Knck03 1
+    100136: Jnt_Fngr03_Knck01
+    100138: Jnt_Fngr03_Knck01 1
+    100140: Jnt_Fngr03_Knck02
+    100142: Jnt_Fngr03_Knck02 1
+    100144: Jnt_Fngr03_Knck03
+    100146: Jnt_Fngr03_Knck03 1
+    100148: Jnt_Fngr04_Knck01
+    100150: Jnt_Fngr04_Knck01 1
+    100152: Jnt_Fngr04_Knck02
+    100154: Jnt_Fngr04_Knck02 1
+    100156: Jnt_Fngr04_Knck03
+    100158: Jnt_Fngr04_Knck03 1
+    100160: Jnt_Foot_L
+    100162: Jnt_Foot_R
+    100164: Jnt_Forearm_L
+    100166: Jnt_Forearm_R
+    100168: Jnt_Hand_L
+    100170: Jnt_Hand_R
+    100172: Jnt_Head
+    100174: Jnt_Hip_L
+    100176: Jnt_Hip_R
+    100178: Jnt_Jaw
+    100180: Jnt_Knee_L
+    100182: Jnt_Knee_R
+    100184: Jnt_Mouth
+    100186: Jnt_Neck
+    100188: Jnt_Pelvis
+    100190: Jnt_Spine_01
+    100192: Jnt_Spine_02
+    100194: Jnt_Spine_03
+    100196: Jnt_Spine_04
+    100198: Jnt_Spine_05
+    100200: Jnt_Spine_06
+    100202: Jnt_Thmb_Knck01
+    100204: Jnt_Thmb_Knck02
+    100206: Jnt_Thmb_Knck03
+    100208: Jnt_Tie_01
+    100210: Jnt_Tie_02
+    100212: Jnt_Tie_03
+    100214: Jnt_Tie_04
+    100216: Jnt_Tie_05
+    100218: Jnt_Tie_06
+    100220: Jnt_Toe01_Knck01
+    100222: Jnt_Toe01_Knck01 1
+    100224: Jnt_Toe01_Knck02
+    100226: Jnt_Toe01_Knck02 1
+    100228: Jnt_Toe01_Knck03
+    100230: Jnt_Toe01_Knck03 1
+    100232: Jnt_Toe01_Knck04
+    100234: Jnt_Toe01_Knck04 1
+    100236: Jnt_Toe02_Knck01
+    100238: Jnt_Toe02_Knck01 1
+    100240: Jnt_Toe02_Knck02
+    100242: Jnt_Toe02_Knck02 1
+    100244: Jnt_Toe02_Knck03
+    100246: Jnt_Toe02_Knck03 1
+    100248: Jnt_Toe02_Knck04
+    100250: Jnt_Toe02_Knck04 1
+    100252: Jnt_Toe03_Knck01
+    100254: Jnt_Toe03_Knck01 1
+    100256: Jnt_Toe03_Knck02
+    100258: Jnt_Toe03_Knck02 1
+    100260: Jnt_Toe03_Knck03
+    100262: Jnt_Toe03_Knck03 1
+    100264: Jnt_Toe03_Knck04
+    100266: Jnt_Toe03_Knck04 1
+    100268: Jnt_Toe04_Knck01
+    100270: Jnt_Toe04_Knck01 1
+    100272: Jnt_Toe04_Knck02
+    100274: Jnt_Toe04_Knck02 1
+    100276: Jnt_Toe04_Knck03
+    100278: Jnt_Toe04_Knck03 1
+    100280: Jnt_Toe04_Knck04
+    100282: Jnt_Toe04_Knck04 1
+    100284: Jnt_Toe05_Knck01
+    100286: Jnt_Toe05_Knck01 1
+    100288: Jnt_Toe05_Knck02
+    100290: Jnt_Toe05_Knck02 1
+    100292: Jnt_Toe05_Knck03
+    100294: Jnt_Toe05_Knck03 1
+    100296: Jnt_Toe05_Knck04
+    100298: Jnt_Toe05_Knck04 1
+    100300: Jnt_Wrist_L
+    100302: Jnt_Wrist_R
+    100304: joint1
+    100306: joint2
+    100308: joint3
+    100310: NightmareBear_Mesh
+    100312: Root
+    400000: //RootNode
+    400002: _control
+    400004: _control 1
+    400006: _null
+    400008: Ctrl_Elbow_L
+    400010: Ctrl_Elbow_R
+    400012: Ctrl_Elbow_R 1
+    400014: Ctrl_Fist_L
+    400016: Ctrl_Fist_L 1
+    400018: Ctrl_Fist_R
+    400020: Ctrl_Fist_R 1
+    400022: Ctrl_Foot_L
+    400024: Ctrl_Foot_L 1
+    400026: Ctrl_Foot_R
+    400028: Ctrl_Foot_R 1
+    400030: Ctrl_Forearm_L
+    400032: Ctrl_Forearm_L 1
+    400034: Ctrl_Forearm_R
+    400036: Ctrl_Forearm_R 1
+    400038: Ctrl_Jaw
+    400040: Ctrl_Jaw 1
+    400042: Ctrl_Knee_L
+    400044: Ctrl_Knee_R
+    400046: Ctrl_Neck
+    400048: Ctrl_Neck 1
+    400050: Ctrl_Pelvis
+    400052: Ctrl_Pelvis 1
+    400054: Ctrl_Shoulder_L
+    400056: Ctrl_Shoulder_L 1
+    400058: Ctrl_Shoulder_R
+    400060: Ctrl_Shoulder_R 1
+    400062: Ctrl_Spine01
+    400064: Ctrl_Spine01 1
+    400066: Ctrl_Spine02
+    400068: Ctrl_Spine02 1
+    400070: Ctrl_Spine03
+    400072: Ctrl_Spine03 1
+    400074: Ctrl_Spine04
+    400076: Ctrl_Spine04 1
+    400078: Ctrl_Spine05
+    400080: Ctrl_Spine05 1
+    400082: Ctrl_Spine06
+    400084: Ctrl_Spine06 1
+    400086: Ctrl_Tie
+    400088: Ctrl_Tie 1
+    400090: Ctrl_Wrist_L
+    400092: Ctrl_Wrist_L 1
+    400094: Ctrl_Wrist_R
+    400096: Ctrl_Wrist_R 1
+    400098: Jnt_Ankle_L
+    400100: Jnt_Ankle_R
+    400102: Jnt_Clavical_L
+    400104: Jnt_Clavical_R
+    400106: Jnt_Elbow_L
+    400108: Jnt_Elbow_R
+    400110: Jnt_Eye
+    400112: Jnt_Fngr01_Knck01
+    400114: Jnt_Fngr01_Knck01 1
+    400116: Jnt_Fngr01_Knck02
+    400118: Jnt_Fngr01_Knck02 1
+    400120: Jnt_Fngr01_Knck03
+    400122: Jnt_Fngr01_Knck03 1
+    400124: Jnt_Fngr02_Knck01
+    400126: Jnt_Fngr02_Knck01 1
+    400128: Jnt_Fngr02_Knck02
+    400130: Jnt_Fngr02_Knck02 1
+    400132: Jnt_Fngr02_Knck03
+    400134: Jnt_Fngr02_Knck03 1
+    400136: Jnt_Fngr03_Knck01
+    400138: Jnt_Fngr03_Knck01 1
+    400140: Jnt_Fngr03_Knck02
+    400142: Jnt_Fngr03_Knck02 1
+    400144: Jnt_Fngr03_Knck03
+    400146: Jnt_Fngr03_Knck03 1
+    400148: Jnt_Fngr04_Knck01
+    400150: Jnt_Fngr04_Knck01 1
+    400152: Jnt_Fngr04_Knck02
+    400154: Jnt_Fngr04_Knck02 1
+    400156: Jnt_Fngr04_Knck03
+    400158: Jnt_Fngr04_Knck03 1
+    400160: Jnt_Foot_L
+    400162: Jnt_Foot_R
+    400164: Jnt_Forearm_L
+    400166: Jnt_Forearm_R
+    400168: Jnt_Hand_L
+    400170: Jnt_Hand_R
+    400172: Jnt_Head
+    400174: Jnt_Hip_L
+    400176: Jnt_Hip_R
+    400178: Jnt_Jaw
+    400180: Jnt_Knee_L
+    400182: Jnt_Knee_R
+    400184: Jnt_Mouth
+    400186: Jnt_Neck
+    400188: Jnt_Pelvis
+    400190: Jnt_Spine_01
+    400192: Jnt_Spine_02
+    400194: Jnt_Spine_03
+    400196: Jnt_Spine_04
+    400198: Jnt_Spine_05
+    400200: Jnt_Spine_06
+    400202: Jnt_Thmb_Knck01
+    400204: Jnt_Thmb_Knck02
+    400206: Jnt_Thmb_Knck03
+    400208: Jnt_Tie_01
+    400210: Jnt_Tie_02
+    400212: Jnt_Tie_03
+    400214: Jnt_Tie_04
+    400216: Jnt_Tie_05
+    400218: Jnt_Tie_06
+    400220: Jnt_Toe01_Knck01
+    400222: Jnt_Toe01_Knck01 1
+    400224: Jnt_Toe01_Knck02
+    400226: Jnt_Toe01_Knck02 1
+    400228: Jnt_Toe01_Knck03
+    400230: Jnt_Toe01_Knck03 1
+    400232: Jnt_Toe01_Knck04
+    400234: Jnt_Toe01_Knck04 1
+    400236: Jnt_Toe02_Knck01
+    400238: Jnt_Toe02_Knck01 1
+    400240: Jnt_Toe02_Knck02
+    400242: Jnt_Toe02_Knck02 1
+    400244: Jnt_Toe02_Knck03
+    400246: Jnt_Toe02_Knck03 1
+    400248: Jnt_Toe02_Knck04
+    400250: Jnt_Toe02_Knck04 1
+    400252: Jnt_Toe03_Knck01
+    400254: Jnt_Toe03_Knck01 1
+    400256: Jnt_Toe03_Knck02
+    400258: Jnt_Toe03_Knck02 1
+    400260: Jnt_Toe03_Knck03
+    400262: Jnt_Toe03_Knck03 1
+    400264: Jnt_Toe03_Knck04
+    400266: Jnt_Toe03_Knck04 1
+    400268: Jnt_Toe04_Knck01
+    400270: Jnt_Toe04_Knck01 1
+    400272: Jnt_Toe04_Knck02
+    400274: Jnt_Toe04_Knck02 1
+    400276: Jnt_Toe04_Knck03
+    400278: Jnt_Toe04_Knck03 1
+    400280: Jnt_Toe04_Knck04
+    400282: Jnt_Toe04_Knck04 1
+    400284: Jnt_Toe05_Knck01
+    400286: Jnt_Toe05_Knck01 1
+    400288: Jnt_Toe05_Knck02
+    400290: Jnt_Toe05_Knck02 1
+    400292: Jnt_Toe05_Knck03
+    400294: Jnt_Toe05_Knck03 1
+    400296: Jnt_Toe05_Knck04
+    400298: Jnt_Toe05_Knck04 1
+    400300: Jnt_Wrist_L
+    400302: Jnt_Wrist_R
+    400304: joint1
+    400306: joint2
+    400308: joint3
+    400310: NightmareBear_Mesh
+    400312: Root
+    2100000: NightMareBear_MAT
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: NightmareBear_Mesh
+    9500000: //RootNode
+    13700000: NightmareBear_Mesh
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
