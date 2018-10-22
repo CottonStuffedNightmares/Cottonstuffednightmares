@@ -105,9 +105,8 @@ public class Owl : NPC
     {
         transform.GetChild(0).gameObject.SetActive(true);
         transform.GetChild(1).gameObject.SetActive(false);
-        coll.enabled = !coll.enabled;
+        coll.enabled = coll.enabled;
         NMA.isStopped = false;
-        //inToyForm = false;
         isSearching = true;
         RB.AddForce(0, 10, 0);
         this.gameObject.transform.localScale = new Vector3(scale, scale, scale); //scale size

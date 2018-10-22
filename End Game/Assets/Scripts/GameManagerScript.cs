@@ -83,6 +83,6 @@ public class GameManagerScript : MonoBehaviour
     public void WinGame() {
         Time.timeScale = 0;
         GameTimer = 0;
-        infoDisplay.DisplayMessage("win message", 15);
+        WinScreen.SetActive(true);
     }
 }

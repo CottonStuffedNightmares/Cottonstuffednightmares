@@ -22,6 +22,7 @@ public class TeddyBear : NPC
     private bool ReachedTarget = false;
     private Vector3 SeekPosition = Vector3.zero;
     private int PatrolIterator = 0;
+    private Animator animat;
 
     void Start () {
         RB = GetComponent<Rigidbody>();
@@ -30,8 +31,9 @@ public class TeddyBear : NPC
         //VisRange = GameObject.FindGameObjectWithTag("VisualRange");
 
         game = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManagerScript>();
-        transform.GetChild(0).gameObject.SetActive(false);
+        animat = GetComponent<Animator>();
 
+        transform.GetChild(0).gameObject.SetActive(false);
         coll = GetComponent<Collider>();
         coll.enabled = !coll.enabled;
 
@@ -112,6 +114,9 @@ public class TeddyBear : NPC
 
     public void FollowPlayer()
     {
+        animat.SetBool("isWalking", false);
+        animat.SetBool("isRunning", true);
+        NMA.speed = 1000;
         NMA.destination = player.transform.position;
     }
 
@@ -137,6 +142,9 @@ public class TeddyBear : NPC
     public void Patrol()
     {
         // DO PATROL STUFF
+
+        animat.SetBool("isWalking", true);
+        animat.SetBool("isRunning", false);
 
         if (ReachedTarget)
         {

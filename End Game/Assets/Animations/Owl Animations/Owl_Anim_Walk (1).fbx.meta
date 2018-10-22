@@ -1,0 +1,316 @@
+fileFormatVersion: 2
+guid: c4cd3a5138d1f5547ac306db7bcb4f28
+timeCreated: 1540170641
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: owl_Rig_Finished:Ctrl_Elbow_L
+    100004: owl_Rig_Finished:Ctrl_Elbow_L 1
+    100006: owl_Rig_Finished:Ctrl_Elbow_R
+    100008: owl_Rig_Finished:Ctrl_Elbow_R 1
+    100010: owl_Rig_Finished:Ctrl_Hip_L
+    100012: owl_Rig_Finished:Ctrl_Hip_L 1
+    100014: owl_Rig_Finished:Ctrl_Hip_R
+    100016: owl_Rig_Finished:Ctrl_Hip_R 1
+    100018: owl_Rig_Finished:Ctrl_Neck
+    100020: owl_Rig_Finished:Ctrl_Neck 1
+    100022: owl_Rig_Finished:Ctrl_Pelvis
+    100024: owl_Rig_Finished:Ctrl_Pelvis 1
+    100026: owl_Rig_Finished:Ctrl_Shoulder_L
+    100028: owl_Rig_Finished:Ctrl_Shoulder_L 1
+    100030: owl_Rig_Finished:Ctrl_Shoulder_R
+    100032: owl_Rig_Finished:Ctrl_Shoulder_R 1
+    100034: owl_Rig_Finished:Ctrl_Spine_1
+    100036: owl_Rig_Finished:Ctrl_Spine_1 1
+    100038: owl_Rig_Finished:Ctrl_Spine_2
+    100040: owl_Rig_Finished:Ctrl_Spine_2 1
+    100042: owl_Rig_Finished:Ctrl_Spine_3
+    100044: owl_Rig_Finished:Ctrl_Spine_3 1
+    100046: owl_Rig_Finished:Ctrl_Tail
+    100048: owl_Rig_Finished:Ctrl_Tail 1
+    100050: owl_Rig_Finished:Ctrl_Wrist_L
+    100052: owl_Rig_Finished:Ctrl_Wrist_L 1
+    100054: owl_Rig_Finished:Ctrl_Wrist_R
+    100056: owl_Rig_Finished:Ctrl_Wrist_R 1
+    100058: owl_Rig_Finished:Jnt_Ankle_L
+    100060: owl_Rig_Finished:Jnt_Ankle_R
+    100062: owl_Rig_Finished:Jnt_Elbow_L
+    100064: owl_Rig_Finished:Jnt_Elbow_R
+    100066: owl_Rig_Finished:Jnt_Gear_01
+    100068: owl_Rig_Finished:Jnt_Gear_02
+    100070: owl_Rig_Finished:Jnt_Head
+    100072: owl_Rig_Finished:Jnt_Hip_L
+    100074: owl_Rig_Finished:Jnt_Hip_R
+    100076: owl_Rig_Finished:Jnt_Neck
+    100078: owl_Rig_Finished:Jnt_Pelvis
+    100080: owl_Rig_Finished:Jnt_Shoulder_L
+    100082: owl_Rig_Finished:Jnt_Shoulder_R
+    100084: owl_Rig_Finished:Jnt_Spine_01
+    100086: owl_Rig_Finished:Jnt_Spine_02
+    100088: owl_Rig_Finished:Jnt_Spine_03
+    100090: owl_Rig_Finished:Jnt_Spine_04
+    100092: owl_Rig_Finished:Jnt_Tail_End
+    100094: owl_Rig_Finished:Jnt_Tail_Start
+    100096: owl_Rig_Finished:Jnt_Tailfeather_01_End
+    100098: owl_Rig_Finished:Jnt_Tailfeather_01_Start
+    100100: owl_Rig_Finished:Jnt_Tailfeather_02_End
+    100102: owl_Rig_Finished:Jnt_Tailfeather_02_Start
+    100104: owl_Rig_Finished:Jnt_Tailfeather_03_End
+    100106: owl_Rig_Finished:Jnt_Tailfeather_03_Start
+    100108: owl_Rig_Finished:Jnt_Tailfeather_04_End
+    100110: owl_Rig_Finished:Jnt_Tailfeather_04_Start
+    100112: owl_Rig_Finished:Jnt_Tailfeather_05_End
+    100114: owl_Rig_Finished:Jnt_Tailfeather_05_Start
+    100116: owl_Rig_Finished:Jnt_Toe01_Ball_L
+    100118: owl_Rig_Finished:Jnt_Toe01_Ball_R
+    100120: owl_Rig_Finished:Jnt_Toe01_End_L
+    100122: owl_Rig_Finished:Jnt_Toe01_End_R
+    100124: owl_Rig_Finished:Jnt_Toe02_Ball_L
+    100126: owl_Rig_Finished:Jnt_Toe02_Ball_R
+    100128: owl_Rig_Finished:Jnt_Toe02_End_L
+    100130: owl_Rig_Finished:Jnt_Toe02_End_R
+    100132: owl_Rig_Finished:Jnt_Tongue_01
+    100134: owl_Rig_Finished:Jnt_Tongue_02
+    100136: owl_Rig_Finished:Jnt_Tongue_03
+    100138: owl_Rig_Finished:Jnt_Tongue_04
+    100140: owl_Rig_Finished:Jnt_Tongue_05
+    100142: owl_Rig_Finished:Jnt_Tongue_06
+    100144: owl_Rig_Finished:Jnt_WingBase_L
+    100146: owl_Rig_Finished:Jnt_WingBase_R
+    100148: owl_Rig_Finished:Jnt_Wingreather_01_End
+    100150: owl_Rig_Finished:Jnt_Wingreather_01_End 1
+    100152: owl_Rig_Finished:Jnt_Wingreather_01_Start
+    100154: owl_Rig_Finished:Jnt_Wingreather_01_Start 1
+    100156: owl_Rig_Finished:Jnt_Wingreather_02_End
+    100158: owl_Rig_Finished:Jnt_Wingreather_02_End 1
+    100160: owl_Rig_Finished:Jnt_Wingreather_02_Start
+    100162: owl_Rig_Finished:Jnt_Wingreather_02_Start 1
+    100164: owl_Rig_Finished:Jnt_Wingreather_03_End
+    100166: owl_Rig_Finished:Jnt_Wingreather_03_End 1
+    100168: owl_Rig_Finished:Jnt_Wingreather_03_Start
+    100170: owl_Rig_Finished:Jnt_Wingreather_03_Start 1
+    100172: owl_Rig_Finished:Jnt_Wingreather_04_End
+    100174: owl_Rig_Finished:Jnt_Wingreather_04_End 1
+    100176: owl_Rig_Finished:Jnt_Wingreather_04_Start
+    100178: owl_Rig_Finished:Jnt_Wingreather_04_Start 1
+    100180: owl_Rig_Finished:Jnt_Wingreather_05_End
+    100182: owl_Rig_Finished:Jnt_Wingreather_05_End 1
+    100184: owl_Rig_Finished:Jnt_Wingreather_05_Start
+    100186: owl_Rig_Finished:Jnt_Wingreather_05_Start 1
+    100188: owl_Rig_Finished:Jnt_Wrist_L
+    100190: owl_Rig_Finished:Jnt_Wrist_R
+    100192: owl_Rig_Finished:NightmareOwl_Mesh
+    100194: owl_Rig_Finished:Root
+    400000: //RootNode
+    400002: owl_Rig_Finished:Ctrl_Elbow_L
+    400004: owl_Rig_Finished:Ctrl_Elbow_L 1
+    400006: owl_Rig_Finished:Ctrl_Elbow_R
+    400008: owl_Rig_Finished:Ctrl_Elbow_R 1
+    400010: owl_Rig_Finished:Ctrl_Hip_L
+    400012: owl_Rig_Finished:Ctrl_Hip_L 1
+    400014: owl_Rig_Finished:Ctrl_Hip_R
+    400016: owl_Rig_Finished:Ctrl_Hip_R 1
+    400018: owl_Rig_Finished:Ctrl_Neck
+    400020: owl_Rig_Finished:Ctrl_Neck 1
+    400022: owl_Rig_Finished:Ctrl_Pelvis
+    400024: owl_Rig_Finished:Ctrl_Pelvis 1
+    400026: owl_Rig_Finished:Ctrl_Shoulder_L
+    400028: owl_Rig_Finished:Ctrl_Shoulder_L 1
+    400030: owl_Rig_Finished:Ctrl_Shoulder_R
+    400032: owl_Rig_Finished:Ctrl_Shoulder_R 1
+    400034: owl_Rig_Finished:Ctrl_Spine_1
+    400036: owl_Rig_Finished:Ctrl_Spine_1 1
+    400038: owl_Rig_Finished:Ctrl_Spine_2
+    400040: owl_Rig_Finished:Ctrl_Spine_2 1
+    400042: owl_Rig_Finished:Ctrl_Spine_3
+    400044: owl_Rig_Finished:Ctrl_Spine_3 1
+    400046: owl_Rig_Finished:Ctrl_Tail
+    400048: owl_Rig_Finished:Ctrl_Tail 1
+    400050: owl_Rig_Finished:Ctrl_Wrist_L
+    400052: owl_Rig_Finished:Ctrl_Wrist_L 1
+    400054: owl_Rig_Finished:Ctrl_Wrist_R
+    400056: owl_Rig_Finished:Ctrl_Wrist_R 1
+    400058: owl_Rig_Finished:Jnt_Ankle_L
+    400060: owl_Rig_Finished:Jnt_Ankle_R
+    400062: owl_Rig_Finished:Jnt_Elbow_L
+    400064: owl_Rig_Finished:Jnt_Elbow_R
+    400066: owl_Rig_Finished:Jnt_Gear_01
+    400068: owl_Rig_Finished:Jnt_Gear_02
+    400070: owl_Rig_Finished:Jnt_Head
+    400072: owl_Rig_Finished:Jnt_Hip_L
+    400074: owl_Rig_Finished:Jnt_Hip_R
+    400076: owl_Rig_Finished:Jnt_Neck
+    400078: owl_Rig_Finished:Jnt_Pelvis
+    400080: owl_Rig_Finished:Jnt_Shoulder_L
+    400082: owl_Rig_Finished:Jnt_Shoulder_R
+    400084: owl_Rig_Finished:Jnt_Spine_01
+    400086: owl_Rig_Finished:Jnt_Spine_02
+    400088: owl_Rig_Finished:Jnt_Spine_03
+    400090: owl_Rig_Finished:Jnt_Spine_04
+    400092: owl_Rig_Finished:Jnt_Tail_End
+    400094: owl_Rig_Finished:Jnt_Tail_Start
+    400096: owl_Rig_Finished:Jnt_Tailfeather_01_End
+    400098: owl_Rig_Finished:Jnt_Tailfeather_01_Start
+    400100: owl_Rig_Finished:Jnt_Tailfeather_02_End
+    400102: owl_Rig_Finished:Jnt_Tailfeather_02_Start
+    400104: owl_Rig_Finished:Jnt_Tailfeather_03_End
+    400106: owl_Rig_Finished:Jnt_Tailfeather_03_Start
+    400108: owl_Rig_Finished:Jnt_Tailfeather_04_End
+    400110: owl_Rig_Finished:Jnt_Tailfeather_04_Start
+    400112: owl_Rig_Finished:Jnt_Tailfeather_05_End
+    400114: owl_Rig_Finished:Jnt_Tailfeather_05_Start
+    400116: owl_Rig_Finished:Jnt_Toe01_Ball_L
+    400118: owl_Rig_Finished:Jnt_Toe01_Ball_R
+    400120: owl_Rig_Finished:Jnt_Toe01_End_L
+    400122: owl_Rig_Finished:Jnt_Toe01_End_R
+    400124: owl_Rig_Finished:Jnt_Toe02_Ball_L
+    400126: owl_Rig_Finished:Jnt_Toe02_Ball_R
+    400128: owl_Rig_Finished:Jnt_Toe02_End_L
+    400130: owl_Rig_Finished:Jnt_Toe02_End_R
+    400132: owl_Rig_Finished:Jnt_Tongue_01
+    400134: owl_Rig_Finished:Jnt_Tongue_02
+    400136: owl_Rig_Finished:Jnt_Tongue_03
+    400138: owl_Rig_Finished:Jnt_Tongue_04
+    400140: owl_Rig_Finished:Jnt_Tongue_05
+    400142: owl_Rig_Finished:Jnt_Tongue_06
+    400144: owl_Rig_Finished:Jnt_WingBase_L
+    400146: owl_Rig_Finished:Jnt_WingBase_R
+    400148: owl_Rig_Finished:Jnt_Wingreather_01_End
+    400150: owl_Rig_Finished:Jnt_Wingreather_01_End 1
+    400152: owl_Rig_Finished:Jnt_Wingreather_01_Start
+    400154: owl_Rig_Finished:Jnt_Wingreather_01_Start 1
+    400156: owl_Rig_Finished:Jnt_Wingreather_02_End
+    400158: owl_Rig_Finished:Jnt_Wingreather_02_End 1
+    400160: owl_Rig_Finished:Jnt_Wingreather_02_Start
+    400162: owl_Rig_Finished:Jnt_Wingreather_02_Start 1
+    400164: owl_Rig_Finished:Jnt_Wingreather_03_End
+    400166: owl_Rig_Finished:Jnt_Wingreather_03_End 1
+    400168: owl_Rig_Finished:Jnt_Wingreather_03_Start
+    400170: owl_Rig_Finished:Jnt_Wingreather_03_Start 1
+    400172: owl_Rig_Finished:Jnt_Wingreather_04_End
+    400174: owl_Rig_Finished:Jnt_Wingreather_04_End 1
+    400176: owl_Rig_Finished:Jnt_Wingreather_04_Start
+    400178: owl_Rig_Finished:Jnt_Wingreather_04_Start 1
+    400180: owl_Rig_Finished:Jnt_Wingreather_05_End
+    400182: owl_Rig_Finished:Jnt_Wingreather_05_End 1
+    400184: owl_Rig_Finished:Jnt_Wingreather_05_Start
+    400186: owl_Rig_Finished:Jnt_Wingreather_05_Start 1
+    400188: owl_Rig_Finished:Jnt_Wrist_L
+    400190: owl_Rig_Finished:Jnt_Wrist_R
+    400192: owl_Rig_Finished:NightmareOwl_Mesh
+    400194: owl_Rig_Finished:Root
+    2100000: owl_Rig_Finished_NightmareOwl_MAT
+    4300000: owl_Rig_Finished:NightmareOwl_Mesh
+    7400000: Walk
+    9500000: //RootNode
+    13700000: owl_Rig_Finished:NightmareOwl_Mesh
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Walk
+      firstFrame: 1
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

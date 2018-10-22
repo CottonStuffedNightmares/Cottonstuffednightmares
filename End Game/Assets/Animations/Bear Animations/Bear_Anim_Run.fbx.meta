@@ -1,0 +1,221 @@
+fileFormatVersion: 2
+guid: 15f27de64cf7ab94fbf6f2ce842d01c5
+timeCreated: 1540176412
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bear_Rig_Weighted:_control
+    100004: Bear_Rig_Weighted:_control 1
+    100006: Bear_Rig_Weighted:_null
+    100008: Bear_Rig_Weighted:Ctrl_Elbow_L
+    100010: Bear_Rig_Weighted:Ctrl_Elbow_R
+    100012: Bear_Rig_Weighted:Ctrl_Elbow_R 1
+    100014: Bear_Rig_Weighted:Ctrl_Fist_L
+    100016: Bear_Rig_Weighted:Ctrl_Fist_L 1
+    100018: Bear_Rig_Weighted:Ctrl_Fist_R
+    100020: Bear_Rig_Weighted:Ctrl_Fist_R 1
+    100022: Bear_Rig_Weighted:Ctrl_Foot_L
+    100024: Bear_Rig_Weighted:Ctrl_Foot_L 1
+    100026: Bear_Rig_Weighted:Ctrl_Foot_R
+    100028: Bear_Rig_Weighted:Ctrl_Foot_R 1
+    100030: Bear_Rig_Weighted:Ctrl_Forearm_L
+    100032: Bear_Rig_Weighted:Ctrl_Forearm_L 1
+    100034: Bear_Rig_Weighted:Ctrl_Forearm_R
+    100036: Bear_Rig_Weighted:Ctrl_Forearm_R 1
+    100038: Bear_Rig_Weighted:Ctrl_Jaw
+    100040: Bear_Rig_Weighted:Ctrl_Jaw 1
+    100042: Bear_Rig_Weighted:Ctrl_Knee_L
+    100044: Bear_Rig_Weighted:Ctrl_Knee_R
+    100046: Bear_Rig_Weighted:Ctrl_Neck
+    100048: Bear_Rig_Weighted:Ctrl_Neck 1
+    100050: Bear_Rig_Weighted:Ctrl_Pelvis
+    100052: Bear_Rig_Weighted:Ctrl_Pelvis 1
+    100054: Bear_Rig_Weighted:Ctrl_Shoulder_L
+    100056: Bear_Rig_Weighted:Ctrl_Shoulder_L 1
+    100058: Bear_Rig_Weighted:Ctrl_Shoulder_R
+    100060: Bear_Rig_Weighted:Ctrl_Shoulder_R 1
+    100062: Bear_Rig_Weighted:Ctrl_Spine01
+    100064: Bear_Rig_Weighted:Ctrl_Spine01 1
+    100066: Bear_Rig_Weighted:Ctrl_Spine02
+    100068: Bear_Rig_Weighted:Ctrl_Spine02 1
+    100070: Bear_Rig_Weighted:Ctrl_Spine03
+    100072: Bear_Rig_Weighted:Ctrl_Spine03 1
+    100074: Bear_Rig_Weighted:Ctrl_Spine04
+    100076: Bear_Rig_Weighted:Ctrl_Spine04 1
+    100078: Bear_Rig_Weighted:Ctrl_Spine05
+    100080: Bear_Rig_Weighted:Ctrl_Spine05 1
+    100082: Bear_Rig_Weighted:Ctrl_Spine06
+    100084: Bear_Rig_Weighted:Ctrl_Spine06 1
+    100086: Bear_Rig_Weighted:Ctrl_Tie
+    100088: Bear_Rig_Weighted:Ctrl_Tie 1
+    100090: Bear_Rig_Weighted:Ctrl_Wrist_L
+    100092: Bear_Rig_Weighted:Ctrl_Wrist_L 1
+    100094: Bear_Rig_Weighted:Ctrl_Wrist_R
+    100096: Bear_Rig_Weighted:Ctrl_Wrist_R 1
+    100098: Bear_Rig_Weighted:NightmareBear_Mesh
+    400000: //RootNode
+    400002: Bear_Rig_Weighted:_control
+    400004: Bear_Rig_Weighted:_control 1
+    400006: Bear_Rig_Weighted:_null
+    400008: Bear_Rig_Weighted:Ctrl_Elbow_L
+    400010: Bear_Rig_Weighted:Ctrl_Elbow_R
+    400012: Bear_Rig_Weighted:Ctrl_Elbow_R 1
+    400014: Bear_Rig_Weighted:Ctrl_Fist_L
+    400016: Bear_Rig_Weighted:Ctrl_Fist_L 1
+    400018: Bear_Rig_Weighted:Ctrl_Fist_R
+    400020: Bear_Rig_Weighted:Ctrl_Fist_R 1
+    400022: Bear_Rig_Weighted:Ctrl_Foot_L
+    400024: Bear_Rig_Weighted:Ctrl_Foot_L 1
+    400026: Bear_Rig_Weighted:Ctrl_Foot_R
+    400028: Bear_Rig_Weighted:Ctrl_Foot_R 1
+    400030: Bear_Rig_Weighted:Ctrl_Forearm_L
+    400032: Bear_Rig_Weighted:Ctrl_Forearm_L 1
+    400034: Bear_Rig_Weighted:Ctrl_Forearm_R
+    400036: Bear_Rig_Weighted:Ctrl_Forearm_R 1
+    400038: Bear_Rig_Weighted:Ctrl_Jaw
+    400040: Bear_Rig_Weighted:Ctrl_Jaw 1
+    400042: Bear_Rig_Weighted:Ctrl_Knee_L
+    400044: Bear_Rig_Weighted:Ctrl_Knee_R
+    400046: Bear_Rig_Weighted:Ctrl_Neck
+    400048: Bear_Rig_Weighted:Ctrl_Neck 1
+    400050: Bear_Rig_Weighted:Ctrl_Pelvis
+    400052: Bear_Rig_Weighted:Ctrl_Pelvis 1
+    400054: Bear_Rig_Weighted:Ctrl_Shoulder_L
+    400056: Bear_Rig_Weighted:Ctrl_Shoulder_L 1
+    400058: Bear_Rig_Weighted:Ctrl_Shoulder_R
+    400060: Bear_Rig_Weighted:Ctrl_Shoulder_R 1
+    400062: Bear_Rig_Weighted:Ctrl_Spine01
+    400064: Bear_Rig_Weighted:Ctrl_Spine01 1
+    400066: Bear_Rig_Weighted:Ctrl_Spine02
+    400068: Bear_Rig_Weighted:Ctrl_Spine02 1
+    400070: Bear_Rig_Weighted:Ctrl_Spine03
+    400072: Bear_Rig_Weighted:Ctrl_Spine03 1
+    400074: Bear_Rig_Weighted:Ctrl_Spine04
+    400076: Bear_Rig_Weighted:Ctrl_Spine04 1
+    400078: Bear_Rig_Weighted:Ctrl_Spine05
+    400080: Bear_Rig_Weighted:Ctrl_Spine05 1
+    400082: Bear_Rig_Weighted:Ctrl_Spine06
+    400084: Bear_Rig_Weighted:Ctrl_Spine06 1
+    400086: Bear_Rig_Weighted:Ctrl_Tie
+    400088: Bear_Rig_Weighted:Ctrl_Tie 1
+    400090: Bear_Rig_Weighted:Ctrl_Wrist_L
+    400092: Bear_Rig_Weighted:Ctrl_Wrist_L 1
+    400094: Bear_Rig_Weighted:Ctrl_Wrist_R
+    400096: Bear_Rig_Weighted:Ctrl_Wrist_R 1
+    400098: Bear_Rig_Weighted:NightmareBear_Mesh
+    2100000: Bear_Rig_Weighted_NightMareBear_MAT
+    2300000: Bear_Rig_Weighted:NightmareBear_Mesh
+    3300000: Bear_Rig_Weighted:NightmareBear_Mesh
+    4300000: Bear_Rig_Weighted:NightmareBear_Mesh
+    7400000: Run
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Run
+      takeName: Run
+      firstFrame: 1
+      lastFrame: 17
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
