@@ -67,7 +67,7 @@ public class Items : MonoBehaviour
 
         // Set items to inactive (default)
         m_SprayBottle.SetActive(false);
-        m_WalkyTalky.SetActive(false);
+        //m_WalkyTalky.SetActive(false);
         m_Teapot.SetActive(false);
 
         // Other variables

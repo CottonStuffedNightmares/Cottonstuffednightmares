@@ -51,7 +51,7 @@ public class Crocodile : NPC
         coll = GetComponent<Collider>();
         coll.enabled = !coll.enabled;
 
-        timeToTransformMax = 30;
+        timeToTransformMax = 1;
         MoveSpeed = 10f;
 
         timeToTransform = timeToTransformMax;
@@ -191,7 +191,7 @@ public class Crocodile : NPC
                 isSearching = false;
                 isHunting = true;
             }
-            else if(hit.collider.tag == "Player" && isHunting)
+            else if(hit.collider.tag != "Player" && isHunting)
             {
                 isHunting = false;
                 isSearching = true;
@@ -204,11 +204,6 @@ public class Crocodile : NPC
                 isSearching = false;
                 isHunting = true;
             }
-            else if(hit.collider.tag == "Player" && isHunting)
-            {
-                isHunting = false;
-                isSearching = true;
-            }
         }
         if(Physics.Raycast(origen, transform.forward - transform.right, out hit, VisDist))
         {
@@ -216,11 +211,6 @@ public class Crocodile : NPC
             {
                 isSearching = false;
                 isHunting = true;
-            }
-            else if(hit.collider.tag == "Player" && isHunting)
-            {
-                isHunting = false;
-                isSearching = true;
             }
         }
         if(Physics.Raycast(origen, transform.forward + transform.up, out hit, VisDist))
@@ -230,11 +220,6 @@ public class Crocodile : NPC
                 isSearching = false;
                 isHunting = true;
             }
-            else if(hit.collider.tag == "Player" && isHunting)
-            {
-                isHunting = false;
-                isSearching = true;
-            }
         }
         if (Physics.Raycast(origen, (transform.forward - transform.up), out hit, VisDist))
         {
@@ -242,11 +227,6 @@ public class Crocodile : NPC
             {
                 isSearching = false;
                 isHunting = true;
-            }
-            else if(hit.collider.tag == "Player" && isHunting)
-            {
-                isHunting = false;
-                isSearching = true;
             }
         }
     }
