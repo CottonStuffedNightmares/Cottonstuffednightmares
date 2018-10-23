@@ -14,13 +14,13 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 8
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0, g: 0, b: 0, a: 1}
   m_FogMode: 2
   m_FogDensity: 0.08
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.32352942, g: 0.32352942, b: 0.32352942, a: 1}
+  m_AmbientSkyColor: {r: 1, g: 1, b: 1, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -25005,7 +25005,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300000, guid: 3066d17edbb7853418fc3dc5c6c13d9b, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 19e4ff1ba966a694799c3ac65f3c40c0, type: 3}
   m_Bones:
   - {fileID: 934265566}
   - {fileID: 66396447}
@@ -31333,8 +31333,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.9481573, y: 2.5, z: 0.039923094}
-  m_Center: {x: 0.63264954, y: 0, z: 0}
+  m_Size: {x: 5.8719053, y: 2.5, z: 0.039923094}
+  m_Center: {x: 0.6707754, y: 0, z: 0}
 --- !u!1 &1157529211
 GameObject:
   m_ObjectHideFlags: 0
