@@ -170,7 +170,7 @@ public class TeddyBear : NPC
                 isSearching = false;
                 isHunting = true;
             }
-            else
+            else if(hit.collider.tag == "Player" && isSearching)
             {
                 isHunting = false;
                 isSearching = true;
