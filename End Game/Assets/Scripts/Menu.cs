@@ -15,6 +15,7 @@ public class Menu : MonoBehaviour
     //Panels
     public GameObject mainMenuPanel;
     public GameObject controlsPanel;
+    public GameObject creditsPanel;
 
     //Bools
     private bool controlsActive = false;
@@ -30,6 +31,7 @@ public class Menu : MonoBehaviour
 
         mainMenuPanel.SetActive(true);
         controlsPanel.SetActive(false);
+        creditsPanel.SetActive(false);
     }
     //Game Start
     public void StartGame()
@@ -57,6 +59,16 @@ public class Menu : MonoBehaviour
             mainMenuPanel.SetActive(true);
             controlsPanel.SetActive(false);
             controlsActive = false;
+        }
+    }
+
+    public void ToggleCreditsPanel() {
+        if (creditsPanel.activeSelf == false) {
+            creditsPanel.SetActive(true);
+        }
+
+        else {
+            creditsPanel.SetActive(false);
         }
     }
 }
