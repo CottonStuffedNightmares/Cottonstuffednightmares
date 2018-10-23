@@ -12,6 +12,8 @@ public class TeddyBear : NPC
     [SerializeField]
     private float yOffSet;
 
+    private float MoveSpeed;
+
     private GameObject player;
     private Rigidbody RB;
     private NavMeshAgent NMA;
@@ -24,11 +26,11 @@ public class TeddyBear : NPC
     private int PatrolIterator = 0;
     private Animator animat;
 
-    void Start () {
+    void Start ()
+    {
         RB = GetComponent<Rigidbody>();
         NMA = GetComponent<NavMeshAgent>();
         player = GameObject.Find("FPSController");
-        //VisRange = GameObject.FindGameObjectWithTag("VisualRange");
 
         game = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManagerScript>();
         animat = GetComponent<Animator>();
@@ -37,17 +39,15 @@ public class TeddyBear : NPC
         coll = GetComponent<Collider>();
         coll.enabled = !coll.enabled;
 
-        timeToTransformMax = 1;
-        //timeToRevertMax = 30;
+        timeToTransformMax = 30;
+        MoveSpeed = 10f;
 
         timeToTransform = timeToTransformMax;
-        //timeToRevert = timeToRevertMax;
 
         isSearching = false;
-        //inToyForm = true;
 
         SeekPosition = transform.position;
-
+        NMA.SetDestination(SeekPosition);
     }
 
     void Update() {
@@ -62,11 +62,6 @@ public class TeddyBear : NPC
             timeToTransform -= Time.deltaTime;
         }
 
-        //// In demon form, countdown to toy form
-        //if (timeToRevert >= 0 && !inToyForm) {
-        //    timeToRevert -= Time.deltaTime;
-        //}
-
         //=================================================================================
         // Timers  while in toy/demon form
         //=================================================================================
@@ -75,7 +70,6 @@ public class TeddyBear : NPC
         if (timeToTransform <= 0 && !isSearching)
         {
             DemonForm();
-            //VisRange.SetActive(true);
         }
 
         ReachedTarget = NMA.remainingDistance < 0.2f;
@@ -84,14 +78,10 @@ public class TeddyBear : NPC
         {
             FollowPlayer();
         }
-        if (isSearching)
+        if(isSearching && !isHunting)
         {
             Patrol();
         }
-        //else if (!isSearching)
-        //{
-        //    StopSearching();
-        //}
     }
     
     public void DemonForm()
@@ -101,11 +91,12 @@ public class TeddyBear : NPC
         coll.enabled = !coll.enabled;
         NMA.isStopped = false;
         isSearching = true;
-        RB.AddForce(0, 10, 0);
+        RB.AddForce(0, MoveSpeed, 0);
         this.gameObject.transform.localScale = new Vector3(scale, scale, scale); //scale size
     }
 
-    public void ToyForm() {
+    public void ToyForm()
+    {
         StopSearching();
         //inToyForm = true;
         this.gameObject.transform.localScale = new Vector3(1, 1, 1); // scale size
@@ -116,11 +107,12 @@ public class TeddyBear : NPC
     {
         animat.SetBool("isWalking", false);
         animat.SetBool("isRunning", true);
-        NMA.speed = 1000;
+        NMA.speed = 100;
         NMA.destination = player.transform.position;
     }
 
-    public void StopSearching() {
+    public void StopSearching()
+    {
         RB.velocity = new Vector3(0, 0, 0);
         NMA.isStopped = true;
         isSearching = false;
@@ -142,13 +134,11 @@ public class TeddyBear : NPC
     public void Patrol()
     {
         // DO PATROL STUFF
-
+        NMA.speed = 3;
         animat.SetBool("isWalking", true);
         animat.SetBool("isRunning", false);
-
         if (ReachedTarget)
         {
-
             if (PatrolIterator >= patrolPoints.Length)
             {
                 // Wrap index in case of overflow.
@@ -159,14 +149,13 @@ public class TeddyBear : NPC
             NMA.SetDestination(patrolPoints[PatrolIterator].position);
             PatrolIterator++;
             PatrolIterator %= patrolPoints.Length;
-            //ReachedTarget = false;
         }
     }
 
     public void VisualRange()
     {
         RaycastHit hit;
-        origen = new Vector3(transform.position.x, transform.position.y - yOffSet, transform.position.z);
+        origen = new Vector3(transform.position.x, transform.position.y + yOffSet, transform.position.z);
 
         Debug.DrawRay(origen, transform.forward * VisDist, Color.red);
         Debug.DrawRay(origen, (transform.forward + transform.right) * VisDist, Color.red);
@@ -180,6 +169,11 @@ public class TeddyBear : NPC
             {
                 isSearching = false;
                 isHunting = true;
+            }
+            else
+            {
+                isHunting = false;
+                isSearching = true;
             }
         }
         if(Physics.Raycast(origen, transform.forward + transform.right, out hit, VisDist))

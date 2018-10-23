@@ -7,8 +7,6 @@ using UnityEngine.UI;
 public class Crocodile : NPC
 {
     private float VisDist = 30;
-    //private float HalfVis = 10;
-    //private float SphereRadius;
 
     [SerializeField]
     private float yOffSet;
@@ -45,9 +43,6 @@ public class Crocodile : NPC
         RB = GetComponent<Rigidbody>();
         NMA = GetComponent<NavMeshAgent>();
         player = GameObject.Find("FPSController");
-        //Toy = GameObject.FindGameObjectWithTag("Plushie");
-        //Nightmare = GameObject.FindGameObjectWithTag("Nightmare");
-        //render = this.GetComponentInChildren<MeshRenderer>();
 
         game = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManagerScript>();
         animat = GetComponent<Animator>();
@@ -56,18 +51,12 @@ public class Crocodile : NPC
         coll = GetComponent<Collider>();
         coll.enabled = !coll.enabled;
 
-        timeToTransformMax = 1;
-        timeToRevertMax = 30;
-        //SphereRadius = 2.0f;
+        timeToTransformMax = 30;
         MoveSpeed = 10f;
 
         timeToTransform = timeToTransformMax;
-        timeToRevert = timeToRevertMax;
 
         isSearching = false;
-        //inToyForm = true;
-
-        //Nightmare.SetActive(false);
 
         SeekPosition = transform.position;
         NMA.SetDestination(SeekPosition);
@@ -120,7 +109,6 @@ public class Crocodile : NPC
         transform.GetChild(1).gameObject.SetActive(false);
         coll.enabled = !coll.enabled;
         NMA.isStopped = false;
-        //inToyForm = false;
         isSearching = true;
         RB.AddForce(0, MoveSpeed, 0);
         this.gameObject.transform.localScale = new Vector3(scale, scale, scale); //scale size
@@ -136,12 +124,10 @@ public class Crocodile : NPC
     
     public void FollowPlayer()
     {
-        //RB.AddForce(player.transform.position, ForceMode.Acceleration);
         animat.SetBool("isWalking", false);
         animat.SetBool("isRunning", true);
-        NMA.speed = 1000;
+        NMA.speed = 100;
         NMA.destination = player.transform.position;
-        //MoveSpeed = 100;
     }
     
     public void StopSearching()
@@ -168,11 +154,11 @@ public class Crocodile : NPC
     public void Patrol()
     {
         // DO PATROL STUFF
+        NMA.speed = 3;
         animat.SetBool("isRunning", false);
         animat.SetBool("isWalking", true);
         if (ReachedTarget)
         {
-
             if(PatrolIterator >= patrolPoints.Length)
             {
                 //Wrap index in case of overflow
