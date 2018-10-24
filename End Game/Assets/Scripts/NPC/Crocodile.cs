@@ -13,7 +13,8 @@ public class Crocodile : NPC
 
 
     private Vector3 origen;
-
+    
+    [SerializeField]
     private float MoveSpeed;
 
     GameManagerScript game;
@@ -50,9 +51,6 @@ public class Crocodile : NPC
         transform.GetChild(0).gameObject.SetActive(false);
         coll = GetComponent<Collider>();
         coll.enabled = !coll.enabled;
-
-        timeToTransformMax = 1;
-        MoveSpeed = 10f;
 
         timeToTransform = timeToTransformMax;
 

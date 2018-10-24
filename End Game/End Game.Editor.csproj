@@ -431,6 +431,7 @@
   <ItemGroup>
     <None Include="Assets\3rdPartyAssets\Day-Night Skyboxes\Textures\Readme for Assigning.txt" />
     <None Include="Assets\3rdPartyAssets\Day-Night Skyboxes\readme.txt" />
+    <None Include="Assets\3rdPartyAssets\DynamicBone\ReadMe.txt" />
     <None Include="Assets\3rdPartyAssets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
     <None Include="Assets\3rdPartyAssets\PostProcessing-2\PostProcessing\Editor\Unity.Postprocessing.Editor.asmdef" />
     <None Include="Assets\3rdPartyAssets\PostProcessing-2\PostProcessing\Runtime\Unity.Postprocessing.Runtime.asmdef" />
