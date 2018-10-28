@@ -1874,7 +1874,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4419398638582884}
-  - component: {fileID: 114997527332826484}
   m_Layer: 0
   m_Name: DemonCroc_Rig:joint8
   m_TagString: Untagged
@@ -5544,6 +5543,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4888999542505630}
+  - component: {fileID: 114651432788027104}
   m_Layer: 0
   m_Name: DemonCroc_Rig:Jnt_Tail_Head
   m_TagString: Untagged
@@ -6268,6 +6268,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4475630375868920}
+  - component: {fileID: 114731376645179618}
   m_Layer: 0
   m_Name: DemonCroc_Rig:Jnt_Jaw_Base
   m_TagString: Untagged
@@ -14674,11 +14675,12 @@ MonoBehaviour:
   - {fileID: 0}
   playerKillPos: {fileID: 0}
   timeToTransform: 0
-  timeToTransformMax: 0
+  timeToTransformMax: 10
   timeToRevert: 0
   timeToRevertMax: 0
   scale: 4
   yOffSet: 0
+  MoveSpeed: 7
   target: {fileID: 0}
 --- !u!114 &114285676107702246
 MonoBehaviour:
@@ -14754,6 +14756,65 @@ MonoBehaviour:
   timeToRevertMax: 0
   scale: 4
   yOffSet: 4
+--- !u!114 &114651432788027104
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1731167586372628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9ac8d30c6a0d9642a11e5be4c440740, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Root: {fileID: 4419398638582884}
+  m_UpdateRate: 90
+  m_UpdateMode: 0
+  m_Damping: 0.1
+  m_DampingDistrib:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_Elasticity: 0.03
+  m_ElasticityDistrib:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_Stiffness: 0
+  m_StiffnessDistrib:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_Inert: 0.7
+  m_InertDistrib:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_Radius: 0.25
+  m_RadiusDistrib:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_EndLength: 0
+  m_EndOffset: {x: 0, y: 0, z: 0}
+  m_Gravity: {x: 0, y: 0, z: 0}
+  m_Force: {x: 0, y: 0, z: 0}
+  m_Colliders: []
+  m_Exclusions: []
+  m_FreezeAxis: 0
+  m_DistantDisable: 0
+  m_ReferenceObject: {fileID: 0}
+  m_DistanceToObject: 20
 --- !u!114 &114721981358495044
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14776,42 +14837,42 @@ MonoBehaviour:
   timeToRevertMax: 0
   scale: 2.5
   inTorch: 0
---- !u!114 &114997527332826484
+--- !u!114 &114731376645179618
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1236894668969918}
+  m_GameObject: {fileID: 1827973011224516}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9ac8d30c6a0d9642a11e5be4c440740, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Root: {fileID: 4419398638582884}
-  m_UpdateRate: 60
+  m_Root: {fileID: 4475630375868920}
+  m_UpdateRate: 90
   m_UpdateMode: 0
-  m_Damping: 0.8
+  m_Damping: 0.1
   m_DampingDistrib:
     serializedVersion: 2
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_Elasticity: 0.08
+  m_Elasticity: 0.02
   m_ElasticityDistrib:
     serializedVersion: 2
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_Stiffness: 0.06
+  m_Stiffness: 0
   m_StiffnessDistrib:
     serializedVersion: 2
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_Inert: 0.6
+  m_Inert: 0.9
   m_InertDistrib:
     serializedVersion: 2
     m_Curve: []
