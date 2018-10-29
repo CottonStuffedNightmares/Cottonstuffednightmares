@@ -39,7 +39,7 @@ public class TeddyBear : NPC
         coll = GetComponent<Collider>();
         coll.enabled = !coll.enabled;
 
-        timeToTransformMax = 30;
+        timeToTransformMax = 20;
         MoveSpeed = 10f;
 
         timeToTransform = timeToTransformMax;

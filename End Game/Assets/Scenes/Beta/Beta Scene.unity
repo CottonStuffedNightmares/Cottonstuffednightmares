@@ -1797,11 +1797,11 @@ MonoBehaviour:
   - {fileID: 1336430485}
   - {fileID: 787251352}
   playerKillPos: {fileID: 0}
-  timeToTransform: 0
+  timeToTransform: 30
   timeToTransformMax: 0
   timeToRevert: 0
   timeToRevertMax: 0
-  scale: 0
+  scale: 4
   yOffSet: 0
   MoveSpeed: 0
   target: {fileID: 0}
@@ -20308,6 +20308,14 @@ Prefab:
       propertyPath: YouDied
       value: 
       objectReference: {fileID: 1017634119}
+    - target: {fileID: 1996425509466460, guid: 337568b84e8047744bf76d337dcafefb, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947429008363488, guid: 337568b84e8047744bf76d337dcafefb, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 337568b84e8047744bf76d337dcafefb, type: 2}
   m_IsPrefabParent: 0
