@@ -452,6 +452,8 @@
     <Compile Include="Assets\Scripts\liam scripts\Interactions.cs" />
     <Compile Include="Assets\Scripts\liam scripts\Items.cs" />
     <Compile Include="Assets\Scripts\liam scripts\JackInTheBox.cs" />
+    <Compile Include="Assets\Scripts\LightningFlash.cs" />
+    <Compile Include="Assets\Scripts\LightningSource.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
     <Compile Include="Assets\Scripts\NPC\Crocodile.cs" />
     <Compile Include="Assets\Scripts\NPC\NPC.cs" />
