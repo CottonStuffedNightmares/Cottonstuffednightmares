@@ -15,7 +15,7 @@ public class Interactions : MonoBehaviour
 
     //Raycast Pickups
     public Camera Cam;
-    public float rayDistance = 5;
+    public float rayDistance = 10;
     private float RayLine = 15f;
     private float SphereRadius;
     //private int layerMask;
@@ -212,7 +212,7 @@ public class Interactions : MonoBehaviour
         //if (Physics.SphereCast(ray, SphereRadius, out hit, rayDistance)) {
         if (Physics.Raycast(ray, out hit, rayDistance)) {
             if (hit.collider.tag == "Pickup") {
-                infoDisplay.DisplayTooltip("Take " + hit.collider.name);
+                infoDisplay.DisplayTooltip("[E] Take " + hit.collider.name);
             }
 
             if (hit.collider.tag == "Reciever") {
@@ -226,7 +226,14 @@ public class Interactions : MonoBehaviour
 
             if (hit.collider.tag == "Plushie") {
                 GameObject temp = hit.collider.transform.parent.gameObject;
-                infoDisplay.DisplayTooltip(temp.tag.ToString());
+
+                if (temp.tag == "PlushieOwl") {
+                    infoDisplay.DisplayTooltip("[E] Wind up Owl" /*+ temp.tag.ToString()*/);
+                }
+
+                else {
+                    infoDisplay.DisplayTooltip(temp.tag.ToString());
+                }
             }
 
         }

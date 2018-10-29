@@ -30,7 +30,7 @@ public class Items : MonoBehaviour
     public ParticleSystem Spray;
     public ParticleSystem Pouring;
 
-    private float rayDistance = 5;
+    private float rayDistance = 10;
     private float SphereRadius;
     private int replenishTimer;
 
@@ -91,13 +91,13 @@ public class Items : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha3)) {
-            if (WalkyAcquired && currentItem != ITEMTYPE.WALKYTALKY) {
-                SwitchItem(3);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-            }
-        }
+        //if (Input.GetKeyDown(KeyCode.Alpha3)) {
+        //    if (WalkyAcquired && currentItem != ITEMTYPE.WALKYTALKY) {
+        //        SwitchItem(3);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+        //    }
+        //}
 
-        if (Input.GetKeyDown(KeyCode.Alpha4)) {
+        if (Input.GetKeyDown(KeyCode.Alpha3)) {
             if (TeapotAcquired && currentItem != ITEMTYPE.TEAPOT) {
                 SwitchItem(4);
             }
@@ -139,7 +139,7 @@ public class Items : MonoBehaviour
             m_Teapot.SetActive(false);
             if (m_SprayBottle != null) {
                 m_SprayBottle.SetActive(true);
-                infoDisplay.DisplayMessage("Left-Click to spray", 1);
+                infoDisplay.DisplayMessage2("Click to spray", 1.5f);
             }
         }
 
@@ -149,7 +149,7 @@ public class Items : MonoBehaviour
             m_Teapot.SetActive(false);
             if (m_WalkyTalky != null) {
                 m_WalkyTalky.SetActive(true);
-                infoDisplay.DisplayMessage("Mouse-Scroll to set channel, Left-Click to use", 1);
+                infoDisplay.DisplayMessage2("Mouse-Scroll to set channel, Left-Click to use", 1);
             }
         }
 
@@ -159,7 +159,7 @@ public class Items : MonoBehaviour
             m_WalkyTalky.SetActive(false);
             if (m_Teapot != null) {
                 m_Teapot.SetActive(true);
-                infoDisplay.DisplayMessage("Left-Click to pour some tea", 1.5f);
+                infoDisplay.DisplayMessage2("Click to pour tea", 1.5f);
             }
         }
     }
