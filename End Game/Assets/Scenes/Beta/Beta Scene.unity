@@ -12053,6 +12053,7 @@ GameObject:
   - component: {fileID: 1257861457}
   - component: {fileID: 1257861459}
   - component: {fileID: 1257861458}
+  - component: {fileID: 1257861460}
   m_Layer: 0
   m_Name: NightmareBear
   m_TagString: Untagged
@@ -12117,6 +12118,23 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1257861456}
   m_Mesh: {fileID: 4300000, guid: 27e2cca30fec843479f57505d8ccc142, type: 3}
+--- !u!95 &1257861460
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1257861456}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 27e2cca30fec843479f57505d8ccc142, type: 3}
+  m_Controller: {fileID: 9100000, guid: 1bed36e91e1b79e4ba13c39620d1b2ed, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1260401261
 GameObject:
   m_ObjectHideFlags: 0
