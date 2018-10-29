@@ -21,7 +21,10 @@ public class InfoDisplay : MonoBehaviour {
     // USE TO DISPLAY IN GAME MESSAGES
     private string aMessage;
     private Text MsgBox;
-    public float MsgTimer;
+    private Text MsgBox2;
+    private float MsgTimer;
+    private float MsgTimer2;
+    
 
     public string tutorialMsg1;
     public string tutorialMsg2;
@@ -50,11 +53,13 @@ public class InfoDisplay : MonoBehaviour {
         items = GameObject.Find("FirstPersonCharacter").GetComponent<Items>();
         walkie = GameObject.Find("FirstPersonCharacter").GetComponent<WalkieTalkie>();
         MsgBox = GameObject.Find("MessageBox").GetComponent<Text>();
+        MsgBox2 = GameObject.Find("MessageBox2").GetComponent<Text>();
 
         Tooltip.text = string.Empty;
         MsgBox.text = string.Empty;
         CountdownTimer.text = string.Empty;
         MsgTimer = 0;
+        MsgTimer2 = 0;
         WalkieChannel.enabled = false;
 
         Crocodile = GameObject.FindGameObjectWithTag("Crocodile").GetComponent<Crocodile>();
@@ -119,6 +124,17 @@ public class InfoDisplay : MonoBehaviour {
             }
         }
 
+        if (MsgBox2.text != null) {
+            if (MsgTimer2 > 0) {
+                MsgTimer2 -= Time.deltaTime;
+            }
+
+            if (MsgTimer2 <= 0) {
+                MsgBox2.text = string.Empty;
+            }
+        }
+        
+
         // MONSTER TRANSFORM TIMER
         CrocTimer.text = "Croc: " + Crocodile.timeToTransform.ToString("F0");
         BearTimer.text = "Bear: " + Bear.timeToTransform.ToString("F0");
@@ -158,5 +174,14 @@ public class InfoDisplay : MonoBehaviour {
 
         MsgBox.text = msg;
         MsgTimer = time;
+    }
+
+    public void DisplayMessage2(string msg, float time) {
+        if (MsgBox2.text != null) {
+            MsgBox2.text = string.Empty;
+        }
+
+        MsgBox2.text = msg;
+        MsgTimer2 = time;
     }
 }
