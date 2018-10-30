@@ -13,7 +13,7 @@ public class LightningSource : MonoBehaviour {
     private void Start()
     {
         audSrc = GetComponentInChildren<AudioSource>();
-        lightningManager = GameObject.Find("Menu Manager").GetComponent<LightningFlash>();
+        lightningManager = GameObject.Find("Canvas").GetComponent<LightningFlash>();
     }
 
 
