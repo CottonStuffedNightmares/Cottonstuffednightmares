@@ -87,9 +87,10 @@ public class Owl : NPC
                 animat.SetBool("isWalking", true);
                 FollowPlayer();
             }
-            else if (timeToTransform <= 0)
+            else if (timeToTransform <= 0 && !isSearching)
             {
                 DemonForm();
+                coll.enabled = !coll.enabled;
             }
         }
 
@@ -109,7 +110,6 @@ public class Owl : NPC
     {
         transform.GetChild(0).gameObject.SetActive(true);
         transform.GetChild(1).gameObject.SetActive(false);
-        coll.enabled = coll.enabled;
         NMA.isStopped = false;
         isSearching = true;
         RB.AddForce(0, 10, 0);

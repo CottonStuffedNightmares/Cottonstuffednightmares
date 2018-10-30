@@ -262,6 +262,7 @@ public class Interactions : MonoBehaviour
             if (point.collider.tag == "Owl")
             {
                 target = point.collider.gameObject;
+                Owl.inTorch = true;
                 Owl.StopSearching();
                 //Debug.Log(target);
             }
