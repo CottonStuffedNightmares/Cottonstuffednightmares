@@ -49,7 +49,7 @@ public class Items : MonoBehaviour
         cam = GetComponent<Camera>();
         interactions = GetComponent<Interactions>();
         wt = GetComponent<WalkieTalkie>();
-        infoDisplay = GameObject.Find("GameUI").GetComponent<InfoDisplay>();
+        infoDisplay = GameObject.FindGameObjectWithTag("GameManager").GetComponent<InfoDisplay>();
 
         // Toy/Demon references
         Croc = GameObject.FindGameObjectWithTag("PlushieCroc").GetComponentInParent<Crocodile>();

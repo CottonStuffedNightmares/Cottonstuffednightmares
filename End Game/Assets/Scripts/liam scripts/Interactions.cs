@@ -41,7 +41,7 @@ public class Interactions : MonoBehaviour
     {
         //cursorLock = CursorLockMode.Locked;
         Cam = this.GetComponent<Camera>();
-        infoDisplay = GameObject.Find("GameUI").GetComponent<InfoDisplay>();
+        infoDisplay = GameObject.FindGameObjectWithTag("GameManager").GetComponent<InfoDisplay>();
         items = GetComponent<Items>();
         Owl = GameObject.FindGameObjectWithTag("Owl").GetComponent<Owl>();
         Bear = GameObject.FindGameObjectWithTag("Bear").GetComponent<TeddyBear>();
