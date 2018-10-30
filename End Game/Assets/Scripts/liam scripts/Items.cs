@@ -140,6 +140,7 @@ public class Items : MonoBehaviour
             if (m_SprayBottle != null) {
                 m_SprayBottle.SetActive(true);
                 infoDisplay.DisplayMessage2("Click to spray", 1.5f);
+                infoDisplay.TemporaryTooltipDisplay(1.5f);
             }
         }
 
@@ -160,6 +161,7 @@ public class Items : MonoBehaviour
             if (m_Teapot != null) {
                 m_Teapot.SetActive(true);
                 infoDisplay.DisplayMessage2("Click to pour tea", 1.5f);
+                infoDisplay.TemporaryTooltipDisplay(1.5f);
             }
         }
     }

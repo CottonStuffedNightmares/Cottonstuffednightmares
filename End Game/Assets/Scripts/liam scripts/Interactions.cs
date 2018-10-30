@@ -213,12 +213,13 @@ public class Interactions : MonoBehaviour
         if (Physics.Raycast(ray, out hit, rayDistance)) {
             if (hit.collider.tag == "Pickup") {
                 infoDisplay.DisplayTooltip("[E] Take " + hit.collider.name);
+                infoDisplay.ChangeTooltip(1);
             }
 
-            if (hit.collider.tag == "Reciever") {
-                GameObject temp = hit.collider.gameObject;
-                infoDisplay.DisplayTooltip("reciever " + temp.GetComponent<WalkieReciever>().walkyNumber);
-            }
+            //if (hit.collider.tag == "Reciever") {
+            //    GameObject temp = hit.collider.gameObject;
+            //    infoDisplay.DisplayTooltip("reciever " + temp.GetComponent<WalkieReciever>().walkyNumber);
+            //}
 
             //if (hit.collider.tag == "Hideable") {
             //    infoDisplay.DisplayTooltip("Hide in " + hit.collider.name);
@@ -229,6 +230,7 @@ public class Interactions : MonoBehaviour
 
                 if (temp.tag == "PlushieOwl") {
                     infoDisplay.DisplayTooltip("[E] Wind up Owl" /*+ temp.tag.ToString()*/);
+                    infoDisplay.ChangeTooltip(3);
                 }
 
                 else {
@@ -244,7 +246,8 @@ public class Interactions : MonoBehaviour
            if (hit.collider.tag != "Pickup" && hit.collider.tag != "PlushieCroc" && hit.collider.tag != "PlushieBear" && 
                hit.collider.tag != "PlushieOwl" && hit.collider.tag != "Reciever" &&
               (hit.collider.tag != "Crocodile" || hit.collider.tag != "Owl" || hit.collider.tag != "Bear" ))  {
-               infoDisplay.ClearTooltip();
+                infoDisplay.ClearTooltip();
+                infoDisplay.ClearTooltipImage();
            }
        }
     }
