@@ -19,7 +19,6 @@ public class InfoDisplay : MonoBehaviour {
     private GameManagerScript game;
 
     // GET PLUSHIE/DEMON FORM UI ICONS
-    private bool activeTimerIcons;
     private Image plushie_BearIcon;
     private Image plushie_CrocIcon;
     private Image plushie_OwlIcon;
@@ -34,9 +33,8 @@ public class InfoDisplay : MonoBehaviour {
 
     // USE TO DISPLAY IN GAME MESSAGES
     private Text MsgBox;
-    private Text MsgBox2;
     private float MsgTimer;
-    private float MsgTimer2;
+
     
     public string tutorialMsg1;
     public string tutorialMsg2;
@@ -47,13 +45,14 @@ public class InfoDisplay : MonoBehaviour {
 
     // PLUG IN INSPECTOR
     //public Text CrocTimer, BearTimer, OwlTimer;
-    private float mouseOverTooltipTimer;
-    public Image MouseOverTooltip;
-    
+    public float tempTooltipTimer;
+    public Image pickUpToolTip;
+    public Image useItemTooltip;
+
     public Text CountdownTimer;
-    public Text WalkieChannel;
     public Text Tooltip;
 	public Image CentreDot;
+    //public Text WalkieChannel;
 
     // GAME MANAGER TIMER INFO
     string timeRemaining;
@@ -66,7 +65,6 @@ public class InfoDisplay : MonoBehaviour {
         items = GameObject.Find("FirstPersonCharacter").GetComponent<Items>();
         walkie = GameObject.Find("FirstPersonCharacter").GetComponent<WalkieTalkie>();
         MsgBox = GameObject.Find("MessageBox").GetComponent<Text>();
-        MsgBox2 = GameObject.Find("MessageBox2").GetComponent<Text>();
 
         // Find plushie/demon ui icon
         plushie_BearIcon = transform.Find("Timers/p_BearIcon").gameObject.GetComponent<Image>();
@@ -77,13 +75,12 @@ public class InfoDisplay : MonoBehaviour {
         demon_OwlIcon = transform.Find("Timers/d_OwlIcon").gameObject.GetComponent<Image>();
 
         // Misc Var.
-        mouseOverTooltipTimer = 0;
         Tooltip.text = string.Empty;
         MsgBox.text = string.Empty;
         CountdownTimer.text = string.Empty;
         MsgTimer = 0;
-        MsgTimer2 = 0;
-        WalkieChannel.enabled = false;
+        tempTooltipTimer = 0;
+        //WalkieChannel.enabled = false;
 
         // Find Monster gameObjects
         Crocodile = GameObject.FindGameObjectWithTag("Crocodile").GetComponent<Crocodile>();
@@ -122,11 +119,6 @@ public class InfoDisplay : MonoBehaviour {
                 DisplayMessage(tutorialMsg3, 3);
                 game.isTutorialFinished = true;
             }
-
-            //GRACE PERIOD?
-            //timeRemaining = string.Format("{0:0}:{1:00}", timerMinute, timerSecond);
-            //timerMinute = Mathf.FloorToInt(game.tutorialTimer / 60f);
-            //timerSecond = Mathf.FloorToInt(game.tutorialTimer - timerMinute * 60);
         }
 
         // IN GAME TIMER ==============================================
@@ -134,7 +126,7 @@ public class InfoDisplay : MonoBehaviour {
             timeRemaining = string.Format("{0:0}:{1:00}", timerMinute, timerSecond);
             timerMinute = Mathf.FloorToInt(game.GameTimer / 60f);
             timerSecond = Mathf.FloorToInt(game.GameTimer - timerMinute * 60);
-            CountdownTimer.text = timeRemaining;
+            CountdownTimer.text = "survive for: " + timeRemaining;
 
             // ADJUST ICON ALPHAS
             AdjustBearIconAlpha();
@@ -155,23 +147,13 @@ public class InfoDisplay : MonoBehaviour {
             }
         }
 
-        if (MsgBox2.text != null) {
-            if (MsgTimer2 > 0) {
-                MsgTimer2 -= Time.deltaTime;
+        if (useItemTooltip.sprite != null) {
+            if (tempTooltipTimer > 0) {
+                tempTooltipTimer -= Time.deltaTime;
             }
 
-            if (MsgTimer2 <= 0) {
-                MsgBox2.text = string.Empty;
-            }
-        }
-
-        if (MouseOverTooltip.sprite != null) {
-            if (mouseOverTooltipTimer > 0) {
-                mouseOverTooltipTimer -= Time.deltaTime;
-            }
-
-            if (mouseOverTooltipTimer <= 0) {
-                ClearTooltipImage();
+            if (tempTooltipTimer <= 0) {
+                ClearUseItemTooltip();
             }
         }
    
@@ -181,21 +163,21 @@ public class InfoDisplay : MonoBehaviour {
         //OwlTimer.text = "Owl: " + Owl.timeToTransform.ToString("F0");
 
         // WALKY CHANNELS DISPLAY
-        if (items.currentItem == Items.ITEMTYPE.WALKYTALKY) {
-            if (!WalkieChannel.enabled) {
-                WalkieChannel.enabled = true;
-            }
-
-            if (WalkieChannel.enabled) {
-                WalkieChannel.text = "CH: " + walkie.currentChannel.ToString();
-            }
-        }
-
-        if (items.currentItem != Items.ITEMTYPE.WALKYTALKY) {
-            if (WalkieChannel.enabled) {
-                WalkieChannel.enabled = false;
-            }
-        }       
+        //if (items.currentItem == Items.ITEMTYPE.WALKYTALKY) {
+        //    if (!WalkieChannel.enabled) {
+        //        WalkieChannel.enabled = true;
+        //    }
+        //
+        //    if (WalkieChannel.enabled) {
+        //        WalkieChannel.text = "CH: " + walkie.currentChannel.ToString();
+        //    }
+        //}
+        //
+        //if (items.currentItem != Items.ITEMTYPE.WALKYTALKY) {
+        //    if (WalkieChannel.enabled) {
+        //        WalkieChannel.enabled = false;
+        //    }
+        //}       
     }
 
     public void DisplayTooltip(string word) {
@@ -217,82 +199,57 @@ public class InfoDisplay : MonoBehaviour {
         MsgTimer = time;
     }
 
-    public void DisplayMessage2(string msg, float time) {
-        if (MsgBox2.text != null) {
-            MsgBox2.text = string.Empty;
-        }
-
-        MsgBox2.text = msg;
-        MsgTimer2 = time;
-    }
-
     public void TemporaryTooltipDisplay(/*int num,*/ float timer) {
 
-        if (!MouseOverTooltip.sprite) {
-            MouseOverTooltip.sprite = null;
+        if (!pickUpToolTip.sprite) {
+            pickUpToolTip.sprite = null;
         }
 
-        mouseOverTooltipTimer = timer;
-        Color tempColour = MouseOverTooltip.color;
-        tempColour.a = 1;
-        MouseOverTooltip.color = tempColour;
-        ChangeTooltip(2);
-
-        //MouseOverTooltip.sprite = UseItemIcon;
-
-        //if (num == 1) {
-        //    MouseOverTooltip.sprite = PickUpIcon;
-        //    mouseOverTooltipTimer = 2;
-        //}
-
-        // use item icon
-        //if (num == 2) {
-        //}
-
-        // interact at object icon 
-        //if (num == 3) {
-        //    MouseOverTooltip.sprite = InteractIcon;
-        //    mouseOverTooltipTimer = 2;
-        //}
+        DisplayUseItemTooltip();
+        tempTooltipTimer = timer;
     }
 
-    public void ChangeTooltip(int num) {
-        Color tempColour = MouseOverTooltip.color;
+    public void DisplayUseItemTooltip() {
+        Color tempColour = useItemTooltip.color;
         tempColour.a = 1;
-        MouseOverTooltip.color = tempColour;
+        useItemTooltip.color = tempColour;
+        useItemTooltip.sprite = UseItemIcon;
+    }
+    public void ChangeTooltip(int num) {
+        Color tempColour = pickUpToolTip.color;
+        tempColour.a = 1;
+        pickUpToolTip.color = tempColour;
 
         // pick up item icon
         if (num == 1) {
-            MouseOverTooltip.sprite = PickUpIcon;
+            pickUpToolTip.sprite = PickUpIcon;
         }
 
         // use item icon
-        if (num == 2) {
-            MouseOverTooltip.sprite = UseItemIcon;
-        }
+        //if (num == 2) {
+        //    pickUpToolTip.sprite = UseItemIcon;
+        //}
 
         // interact at object icon 
         if (num == 3) {
-            MouseOverTooltip.sprite = InteractIcon;
+            pickUpToolTip.sprite = InteractIcon;
         }
     }
 
     public void ClearTooltipImage() {
-        Color tempColour = MouseOverTooltip.color;
-        MouseOverTooltip.sprite = null;
+        Color tempColour = pickUpToolTip.color;
+        pickUpToolTip.sprite = null;
         tempColour.a = 0;
-        MouseOverTooltip.color = tempColour;
+        pickUpToolTip.color = tempColour;
     }
 
-    //private void SetTransformIconsActive(bool tf) {
-    //    plushie_BearIcon.gameObject.SetActive(tf);
-    //    plushie_CrocIcon.gameObject.SetActive(tf);
-    //    plushie_OwlIcon.gameObject.SetActive(tf);
-    //
-    //    demon_BearIcon.gameObject.SetActive(tf);
-    //    demon_CrocIcon.gameObject.SetActive(tf);
-    //    demon_OwlIcon.gameObject.SetActive(tf);
-    //}
+    public void ClearUseItemTooltip() {
+        Color tempColour = useItemTooltip.color;
+        useItemTooltip.sprite = null;
+        tempColour.a = 0;
+        useItemTooltip.color = tempColour;
+
+    }
 
     private void AdjustBearIconAlpha() {
         Color pBearAlpha = plushie_BearIcon.color;

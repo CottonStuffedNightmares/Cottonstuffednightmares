@@ -139,7 +139,6 @@ public class Items : MonoBehaviour
             m_Teapot.SetActive(false);
             if (m_SprayBottle != null) {
                 m_SprayBottle.SetActive(true);
-                infoDisplay.DisplayMessage2("Click to spray", 1.5f);
                 infoDisplay.TemporaryTooltipDisplay(1.5f);
             }
         }
@@ -150,7 +149,6 @@ public class Items : MonoBehaviour
             m_Teapot.SetActive(false);
             if (m_WalkyTalky != null) {
                 m_WalkyTalky.SetActive(true);
-                infoDisplay.DisplayMessage2("Mouse-Scroll to set channel, Left-Click to use", 1);
             }
         }
 
@@ -160,7 +158,6 @@ public class Items : MonoBehaviour
             m_WalkyTalky.SetActive(false);
             if (m_Teapot != null) {
                 m_Teapot.SetActive(true);
-                infoDisplay.DisplayMessage2("Click to pour tea", 1.5f);
                 infoDisplay.TemporaryTooltipDisplay(1.5f);
             }
         }
@@ -192,11 +189,6 @@ public class Items : MonoBehaviour
         }
     }
 
-    void UseWalky() {
-        wt.MakeNoise();
-        
-    }
-
     void UseTeapot() {
         RaycastHit hit;
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -218,6 +210,10 @@ public class Items : MonoBehaviour
                 }
             }
         }
+    }
+    void UseWalky() {
+        wt.MakeNoise();
+        
     }
 
 }

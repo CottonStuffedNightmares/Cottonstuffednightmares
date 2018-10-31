@@ -229,7 +229,7 @@ public class Interactions : MonoBehaviour
                 GameObject temp = hit.collider.transform.parent.gameObject;
 
                 if (temp.tag == "PlushieOwl") {
-                    infoDisplay.DisplayTooltip("[E] Wind up Owl" /*+ temp.tag.ToString()*/);
+                    //infoDisplay.DisplayTooltip("[E] Wind up Owl" /*+ temp.tag.ToString()*/);
                     infoDisplay.ChangeTooltip(3);
                 }
 
