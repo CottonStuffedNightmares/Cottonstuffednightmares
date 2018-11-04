@@ -34,7 +34,6 @@ public class InfoDisplay : MonoBehaviour {
     // USE TO DISPLAY IN GAME MESSAGES
     private Text MsgBox;
     private float MsgTimer;
-
     
     public string tutorialMsg1;
     public string tutorialMsg2;
@@ -45,13 +44,13 @@ public class InfoDisplay : MonoBehaviour {
 
     // PLUG IN INSPECTOR
     //public Text CrocTimer, BearTimer, OwlTimer;
-    public float tempTooltipTimer;
+    private float tempTooltipTimer;
+    private Text CountdownTimer;
     public Image pickUpToolTip;
     public Image useItemTooltip;
-
-    public Text CountdownTimer;
-    public Text Tooltip;
 	public Image CentreDot;
+
+    //public Text Tooltip;
     //public Text WalkieChannel;
 
     // GAME MANAGER TIMER INFO
@@ -65,6 +64,7 @@ public class InfoDisplay : MonoBehaviour {
         items = GameObject.Find("FirstPersonCharacter").GetComponent<Items>();
         walkie = GameObject.Find("FirstPersonCharacter").GetComponent<WalkieTalkie>();
         MsgBox = GameObject.Find("MessageBox").GetComponent<Text>();
+        CountdownTimer = transform.Find("GameTimerDisplay").GetComponent<Text>();
 
         // Find plushie/demon ui icon
         plushie_BearIcon = transform.Find("Timers/p_BearIcon").gameObject.GetComponent<Image>();
@@ -75,7 +75,7 @@ public class InfoDisplay : MonoBehaviour {
         demon_OwlIcon = transform.Find("Timers/d_OwlIcon").gameObject.GetComponent<Image>();
 
         // Misc Var.
-        Tooltip.text = string.Empty;
+        //Tooltip.text = string.Empty;
         MsgBox.text = string.Empty;
         CountdownTimer.text = string.Empty;
         MsgTimer = 0;
@@ -180,14 +180,14 @@ public class InfoDisplay : MonoBehaviour {
         //}       
     }
 
-    public void DisplayTooltip(string word) {
-        Tooltip.text = word.ToString();
-    }
+    //public void DisplayTooltip(string word) {
+    //    Tooltip.text = word.ToString();
+    //}
 
-    public void ClearTooltip() {
-        Tooltip.text = string.Empty;
-
-    }
+    //public void ClearTooltip() {
+    //    Tooltip.text = string.Empty;
+    //
+    //}
 
     public void DisplayMessage(string msg, float time) {
 

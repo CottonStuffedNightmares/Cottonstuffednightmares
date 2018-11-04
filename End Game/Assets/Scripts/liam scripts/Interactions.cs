@@ -164,14 +164,14 @@ public class Interactions : MonoBehaviour
         if(Physics.Raycast(ray, out hit, rayDistance))
         {
             // TURN OFF LATER
-            if(hit.collider.tag == "PlushieBear")
-            {
-                if(Bear.timeToTransform < Bear.timeToTransformMax)
-                {
-                    Bear.timeToTransform = Bear.timeToTransformMax;
-                }
-                //Play Giving Bear tea animation
-            }
+            //if(hit.collider.tag == "PlushieBear")
+            //{
+            //    if(Bear.timeToTransform < Bear.timeToTransformMax)
+            //    {
+            //        Bear.timeToTransform = Bear.timeToTransformMax;
+            //    }
+            //    //Play Giving Bear tea animation
+            //}
 
             if(hit.collider.tag == "PlushieOwl")
             {
@@ -212,7 +212,7 @@ public class Interactions : MonoBehaviour
         //if (Physics.SphereCast(ray, SphereRadius, out hit, rayDistance)) {
         if (Physics.Raycast(ray, out hit, rayDistance)) {
             if (hit.collider.tag == "Pickup") {
-                infoDisplay.DisplayTooltip("[E] Take " + hit.collider.name);
+                //infoDisplay.DisplayTooltip("[E] Take " + hit.collider.name);
                 infoDisplay.ChangeTooltip(1);
             }
 
@@ -234,7 +234,7 @@ public class Interactions : MonoBehaviour
                 }
 
                 else {
-                    infoDisplay.DisplayTooltip(temp.tag.ToString());
+                    //infoDisplay.DisplayTooltip(temp.tag.ToString());
                 }
             }
 
@@ -246,7 +246,7 @@ public class Interactions : MonoBehaviour
            if (hit.collider.tag != "Pickup" && hit.collider.tag != "PlushieCroc" && hit.collider.tag != "PlushieBear" && 
                hit.collider.tag != "PlushieOwl" && hit.collider.tag != "Reciever" &&
               (hit.collider.tag != "Crocodile" || hit.collider.tag != "Owl" || hit.collider.tag != "Bear" ))  {
-                infoDisplay.ClearTooltip();
+                //infoDisplay.ClearTooltip();
                 infoDisplay.ClearTooltipImage();
            }
        }
