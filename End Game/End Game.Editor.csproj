@@ -340,6 +340,19 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\3rdPartyAssets\Aura\Editor\Drawers\ColorCircularPickerDrawer.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Aura\Editor\Drawers\Texture3DPreviewDrawer.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Aura\Editor\Editors\AuraEditor.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Aura\Editor\Editors\AuraLightEditor.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Aura\Editor\Editors\AuraVolumeEditor.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Aura\Editor\Editors\CreateTexture3DAssetTool.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Aura\Editor\Editors\Texture3DEditor.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Aura\Editor\Enums\Texture3DReadingOrderEnum.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Aura\Editor\Extensions\Texture3DExtensions.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Aura\Editor\Helpers\GuiHelpers.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Aura\Editor\Helpers\MeshHelpers.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Aura\Editor\Helpers\PreviewRenderUtilityHelpers.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Aura\Editor\Statics\GuiStyles.cs" />
     <Compile Include="Assets\3rdPartyAssets\PostProcessing\Editor\Attributes\PostProcessingModelEditorAttribute.cs" />
     <Compile Include="Assets\3rdPartyAssets\PostProcessing\Editor\Models\AmbientOcclusionModelEditor.cs" />
     <Compile Include="Assets\3rdPartyAssets\PostProcessing\Editor\Models\AntialiasingModelEditor.cs" />
@@ -429,6 +442,39 @@
     <Compile Include="Assets\3rdPartyAssets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\3rdPartyAssets\Aura\Editor\Shaders\ColorFieldDrawerShader.shader" />
+    <None Include="Assets\3rdPartyAssets\Aura\Editor\Shaders\Texture3DPreviewShader.shader" />
+    <None Include="Assets\3rdPartyAssets\Aura\Examples\Sponza\Fireball\FireballBlendAdd.shader" />
+    <None Include="Assets\3rdPartyAssets\Aura\License\license.txt" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\Aura.cginc" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\ComputeShaders\ComputeAccumulationComputeShader.compute" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\ComputeShaders\ComputeDataComputeShader.compute" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\ComputeShaders\ComputeMaximumDepthComputeShader.compute" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\ComputeShaders\Includes\DirectionalLightInjection.cginc" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\ComputeShaders\Includes\OcclusionCulling.cginc" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\ComputeShaders\Includes\PointLightInjection.cginc" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\ComputeShaders\Includes\SpotLightInjection.cginc" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\ComputeShaders\Includes\TemporalReprojection.cginc" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\ComputeShaders\Includes\VolumeInjection.cginc" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\Includes\AuraParticlesBase.cginc" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\Includes\AuraParticlesUsage.cginc" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\Includes\AuraUsage.cginc" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\Includes\BlueNoise.cginc" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\Includes\Common.cginc" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\Includes\CommonFunctions.cginc" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\Includes\CommonVariables.cginc" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\Includes\Noise.cginc" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\Includes\Structs.cginc" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\Shaders\Particles\AuraParticlesAdditive.shader" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\Shaders\Particles\AuraParticlesAlphaBlend.shader" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\Shaders\Particles\AuraParticlesBlendAdd.shader" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\Shaders\PostProcessShader.shader" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\Shaders\ProcessOcclusionTextureShader.shader" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\Shaders\StoreDirectionalSpotLightCookieMap.shader" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\Shaders\StorePointLightCookieMap.shader" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\Shaders\StorePointLightShadowMap.shader" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\Shaders\StoreShadowDataShader.shader" />
+    <None Include="Assets\3rdPartyAssets\Aura\Shaders\Shaders\Surface\AuraStandardAlphaBlended.shader" />
     <None Include="Assets\3rdPartyAssets\Day-Night Skyboxes\Textures\Readme for Assigning.txt" />
     <None Include="Assets\3rdPartyAssets\Day-Night Skyboxes\readme.txt" />
     <None Include="Assets\3rdPartyAssets\DynamicBone\ReadMe.txt" />

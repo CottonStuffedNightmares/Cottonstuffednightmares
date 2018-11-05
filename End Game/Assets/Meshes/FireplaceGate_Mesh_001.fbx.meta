@@ -6,11 +6,22 @@ ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
+    100002: FirePlaceFrame_001
+    100004: FirePlaceFrame_002
     400000: //RootNode
+    400002: FirePlaceFrame_001
+    400004: FirePlaceFrame_002
     2100000: lambert1
+    2100002: lambert2
     2300000: //RootNode
+    2300002: FirePlaceFrame_001
+    2300004: FirePlaceFrame_002
     3300000: //RootNode
+    3300002: FirePlaceFrame_001
+    3300004: FirePlaceFrame_002
     4300000: FireplaceGate_Mesh_001
+    4300002: FirePlaceFrame_002
+    4300004: FirePlaceFrame_001
   externalObjects:
   - first:
       type: UnityEngine:Material

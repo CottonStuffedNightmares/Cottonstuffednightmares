@@ -9,6 +9,7 @@ using UnityEngine.UI;
     // Updates:
     // by Callum Bradshaw
     // -Edward Ngo
+    // -Callum Stirrup-Prazak
     //=======================================================
 
 public class GameManagerScript : MonoBehaviour
@@ -84,5 +85,10 @@ public class GameManagerScript : MonoBehaviour
         Time.timeScale = 0;
         GameTimer = 0;
         WinScreen.SetActive(true);
+    }
+
+    public void ToMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }
