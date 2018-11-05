@@ -46,7 +46,9 @@ public class MenuAI : MonoBehaviour
         //}
 	}
 
-    public void GetNextPoint() {
+    public void GetNextPoint()
+    {
+        animat.SetBool("isWalking", true);
         if (currentDestination == mobManager.patrolCheckpoint1) {
             currentDestination = mobManager.patrolCheckpoint2;
             NMA.destination = currentDestination.transform.position;
