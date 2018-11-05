@@ -14,7 +14,7 @@ public class Owl : NPC
     Interactions Inter;
     private Collider coll;
 
-    public bool inTorch = false;
+    public float OwlTime;
     private Animator animat;
 
     void Start()
@@ -29,7 +29,7 @@ public class Owl : NPC
         animat = GetComponent<Animator>();
 
         coll = GetComponent<Collider>();
-        coll.enabled = !coll.enabled;
+        //coll.enabled = !coll.enabled;
 
         timeToTransformMax = 5;
         //timeToRevertMax = 30;
@@ -75,12 +75,13 @@ public class Owl : NPC
         //=================================================================================
 
         // when in TOY form, and not 'taken care of' and countdown reaches 0, transform to demon
-        if (inTorch)
+        if (OwlTime >= 0)
         {
-            animat.SetBool("isWalking", false);
             StopSearching();
+            OwlTime -= 1;
+            animat.SetBool("isWalking", false);
         }
-        else if(!inTorch)
+        else if(OwlTime <= 0)
         { 
             if (isSearching)
             {
@@ -90,7 +91,7 @@ public class Owl : NPC
             else if (timeToTransform <= 0 && !isSearching)
             {
                 DemonForm();
-                coll.enabled = !coll.enabled;
+                //coll.enabled = coll.enabled;
             }
         }
 
