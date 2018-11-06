@@ -16,6 +16,7 @@ public class Owl : NPC
 
     public float OwlTime;
     private Animator animat;
+    private bool isDemon;
 
     void Start()
     {
@@ -29,13 +30,14 @@ public class Owl : NPC
         animat = GetComponent<Animator>();
 
         coll = GetComponent<Collider>();
-        //coll.enabled = !coll.enabled;
+        coll.enabled = !coll.enabled;
 
         //timeToRevertMax = 30;
 
         timeToTransform = timeToTransformMax;
         //timeToRevert = timeToRevertMax;
 
+        isDemon = false;
         isSearching = false;
         //inToyForm = true;
     }
@@ -63,7 +65,6 @@ public class Owl : NPC
         {
             timeToTransform -= Time.deltaTime;
         }
-
         //// In demon form, countdown to toy form
         //if (timeToRevert >= 0 && !inToyForm) {
         //    timeToRevert -= Time.deltaTime;
@@ -76,9 +77,10 @@ public class Owl : NPC
         // when in TOY form, and not 'taken care of' and countdown reaches 0, transform to demon
         if (OwlTime >= 0)
         {
+            animat.SetBool("isWalking", false);
             StopSearching();
             OwlTime -= 1;
-            animat.SetBool("isWalking", false);
+            Debug.Log(OwlTime);
         }
         else if(OwlTime <= 0)
         { 
@@ -90,7 +92,11 @@ public class Owl : NPC
             else if (timeToTransform <= 0 && !isSearching)
             {
                 DemonForm();
-                //coll.enabled = coll.enabled;
+                if(!isDemon)
+                {
+                    coll.enabled = !coll.enabled;
+                    isDemon = true;
+                }
             }
         }
 
