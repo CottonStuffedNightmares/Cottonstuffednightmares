@@ -16,25 +16,25 @@ public class LightningFlash : MonoBehaviour {
 
     //Used to perform Lightning flashes and controls how long the lights stay on before turning off
     [Header("Delay between flashes")]
-    public float delayMin;
-    public float delayMax;
+    public float delayMin = 7;
+    public float delayMax = 12;
     public float delayTimer = 5;
 
     [Header("Flash time")]
-    public float flashMin;
-    public float flashMax;
-    public float flashTimer;
+    public float flashMin = 0.05f;
+    public float flashMax = 0.25f;
+    public float flashTimer = 5;
 
     [Header("Lightning base brightness & vol")]
-    public float baseStrengthMin;
-    public float baseStrengthMax;
-    public float soundDelayMin;
-    public float soundDelayMax;
-    public float lightningVolDivider = 5f;
+    public float baseStrengthMin = 1;
+    public float baseStrengthMax = 4;
+    public float soundDelayMin = 0.05f;
+    public float soundDelayMax = 1;
+    public float lightningVolDivider = 4f;
 
     [Header("Lightning flicker brightness")]
-    public float lightningMin;
-    public float lightningMax;
+    public float lightningMin = 0.5f;
+    public float lightningMax = 4f;
     
 
 
@@ -72,6 +72,7 @@ public class LightningFlash : MonoBehaviour {
 
     }
 
+    //Controls the lightning flash using a random range between two floats then plays a sound
     public void Flash()
     {
         flashIsOn = true;
@@ -86,7 +87,7 @@ public class LightningFlash : MonoBehaviour {
         //Invoke("PlaySound", Random.Range(soundDelayMin, soundDelayMax));
     }
 
-
+    //Used for turning the light off after Flash
     public void StopFlash()
     {
         flashIsOn = false;
@@ -98,7 +99,7 @@ public class LightningFlash : MonoBehaviour {
         
     }
 
-
+    //calculates the intensity for the next flash
     public void Flicker()
     {
         if (flashIsOn)
