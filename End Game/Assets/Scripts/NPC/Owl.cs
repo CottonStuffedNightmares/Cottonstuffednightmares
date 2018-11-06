@@ -31,7 +31,6 @@ public class Owl : NPC
         coll = GetComponent<Collider>();
         //coll.enabled = !coll.enabled;
 
-        timeToTransformMax = 5;
         //timeToRevertMax = 30;
 
         timeToTransform = timeToTransformMax;

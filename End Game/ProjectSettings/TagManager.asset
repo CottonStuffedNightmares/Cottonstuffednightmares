@@ -23,6 +23,7 @@ TagManager:
   - PlushieOwl
   - PlushieCroc
   - LightningFlash
+  - Flash Controller
   layers:
   - Default
   - TransparentFX

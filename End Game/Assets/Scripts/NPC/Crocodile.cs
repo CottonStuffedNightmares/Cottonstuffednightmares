@@ -52,7 +52,6 @@ public class Crocodile : NPC
         coll = GetComponent<Collider>();
         coll.enabled = !coll.enabled;
 
-        timeToTransformMax = 5 ;
         timeToTransform = timeToTransformMax;
 
         isSearching = false;
