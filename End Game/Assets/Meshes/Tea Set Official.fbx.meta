@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 40f7636d7f1d13640a10b1d50439f1fd
-timeCreated: 1541410961
+guid: 900ef595098c4d846b4a766fd3538ce8
+timeCreated: 1540257336
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -44,7 +44,12 @@ ModelImporter:
     4300010: Tea_cup
     4300012: Tray
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tea_set
+    second: {fileID: 2100000, guid: a7470af2a8214914ca88f982c5bb7d1a, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

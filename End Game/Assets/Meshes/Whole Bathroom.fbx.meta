@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: ab20727662d868547b408fee1ac25f20
-timeCreated: 1541410966
+guid: 496e46511ce262045bd0ec47d5320013
+timeCreated: 1539653898
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -204,7 +204,87 @@ ModelImporter:
     4300064: pasted__Glass
     4300066: pasted__Bathtub2
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Default_Material
+    second: {fileID: 2100000, guid: 2e834a8c5d443e042a219c8e862bc97c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__Bathroom_Sink1
+    second: {fileID: 2100000, guid: 64a9baefe9ac4d04c95c436caa7cbca8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__Bathroom_backsplash
+    second: {fileID: 2100000, guid: 0c24d4e6857d21147aefab4556c41cd0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__Bathtub
+    second: {fileID: 2100000, guid: ccf2587bb8ce72040a671232fe993a8e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__Cactus1
+    second: {fileID: 2100000, guid: 607fa66c5e020f742b45051b4d7db525, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__Cactus_Yellow1
+    second: {fileID: 2100000, guid: 5208d50791acf9147bb13660f52d2bac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__Glass1
+    second: {fileID: 2100000, guid: 679c614c6cc4d944894cf667fabc4466, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__Mirror1
+    second: {fileID: 2100000, guid: faff65633c9e00f41ac599d78f46e924, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__StingrayPBS11
+    second: {fileID: 2100000, guid: 32c3f284c47360041a6d4355020ff374, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__Succulent_green1
+    second: {fileID: 2100000, guid: 7f6375d24d4370243809ed486eb433d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__Succulent_purple1
+    second: {fileID: 2100000, guid: 80571efa236df0a469544fbb00d2f821, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__Tall_Succulent2
+    second: {fileID: 2100000, guid: 4aa267c41d22bac40a72a6e0da4e97ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__Tall_Succulent3
+    second: {fileID: 2100000, guid: 91452629733b33648a059d5dbc978ef1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__Toilet1
+    second: {fileID: 2100000, guid: 359cf9703f7169f47b8dd177cb7ebceb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__Towel_and_carpet
+    second: {fileID: 2100000, guid: a4345b60a234fc347bf57a347216e63d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__Vasepot_small
+    second: {fileID: 2100000, guid: 875a96ec0132573449cc70f69ca13270, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

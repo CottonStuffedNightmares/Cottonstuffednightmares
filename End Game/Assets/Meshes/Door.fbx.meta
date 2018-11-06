@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 02ad2f71fa692c043bf0397610004a3c
-timeCreated: 1541410955
+guid: 6417a43305490884a85d509950d63111
+timeCreated: 1540253487
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -12,7 +12,12 @@ ModelImporter:
     3300000: //RootNode
     4300000: Door
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door
+    second: {fileID: 2100000, guid: 795bbdabf0c308c44883cea0904c3106, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

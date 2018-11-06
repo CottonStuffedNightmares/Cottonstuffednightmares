@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 939739e273fc5d746812234e36fcfb08
-timeCreated: 1541410964
+guid: 73b56886888d1cc4eb8b42242465b45b
+timeCreated: 1540253276
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -12,7 +12,12 @@ ModelImporter:
     3300000: //RootNode
     4300000: Front_Door2
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Front_Door1
+    second: {fileID: 2100000, guid: b5d77a64710feb44189dcc36b83cdfa8, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
