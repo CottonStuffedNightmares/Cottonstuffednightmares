@@ -1,0 +1,242 @@
+fileFormatVersion: 2
+guid: e76b801bd1557bd4fa265326f795293b
+timeCreated: 1541410968
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: DemonCroc_Rig:Jnt_Ankle_L
+    100004: DemonCroc_Rig:Jnt_Ankle_R
+    100006: DemonCroc_Rig:Jnt_Clavical_L
+    100008: DemonCroc_Rig:Jnt_Clavical_R
+    100010: DemonCroc_Rig:Jnt_Elbow_L
+    100012: DemonCroc_Rig:Jnt_Elbow_R
+    100014: DemonCroc_Rig:Jnt_Eye_L
+    100016: DemonCroc_Rig:Jnt_Eye_R
+    100018: DemonCroc_Rig:Jnt_Finger1_Knuckle_L
+    100020: DemonCroc_Rig:Jnt_Finger1_Knuckle_R
+    100022: DemonCroc_Rig:Jnt_Finger1_Tip_L
+    100024: DemonCroc_Rig:Jnt_Finger1_Tip_R
+    100026: DemonCroc_Rig:Jnt_Finger2_Knuckle_L
+    100028: DemonCroc_Rig:Jnt_Finger2_Knuckle_R
+    100030: DemonCroc_Rig:Jnt_Finger2_Tip_L
+    100032: DemonCroc_Rig:Jnt_Finger2_Tip_R
+    100034: DemonCroc_Rig:Jnt_Finger3_Knuckle_L
+    100036: DemonCroc_Rig:Jnt_Finger3_Knuckle_R
+    100038: DemonCroc_Rig:Jnt_Finger3_Tip_L
+    100040: DemonCroc_Rig:Jnt_Finger3_Tip_R
+    100042: DemonCroc_Rig:Jnt_Foot_L
+    100044: DemonCroc_Rig:Jnt_Foot_R
+    100046: DemonCroc_Rig:Jnt_Head
+    100048: DemonCroc_Rig:Jnt_Heel_L
+    100050: DemonCroc_Rig:Jnt_Heel_R
+    100052: DemonCroc_Rig:Jnt_Hip_L
+    100054: DemonCroc_Rig:Jnt_Hip_R
+    100056: DemonCroc_Rig:Jnt_Jaw_Base
+    100058: DemonCroc_Rig:Jnt_Jaw_Tip
+    100060: DemonCroc_Rig:Jnt_Knee_L
+    100062: DemonCroc_Rig:Jnt_Knee_R
+    100064: DemonCroc_Rig:Jnt_Neck
+    100066: DemonCroc_Rig:Jnt_Palm_L
+    100068: DemonCroc_Rig:Jnt_Palm_R
+    100070: DemonCroc_Rig:Jnt_Shoulder_L
+    100072: DemonCroc_Rig:Jnt_Shoulder_R
+    100074: DemonCroc_Rig:Jnt_Spine_1
+    100076: DemonCroc_Rig:Jnt_Spine_2
+    100078: DemonCroc_Rig:Jnt_Spine_3
+    100080: DemonCroc_Rig:Jnt_Tail_Head
+    100082: DemonCroc_Rig:Jnt_Toe1_Knuckle_01_L
+    100084: DemonCroc_Rig:Jnt_Toe1_Knuckle_01_R
+    100086: DemonCroc_Rig:Jnt_Toe1_Knuckle_02_L
+    100088: DemonCroc_Rig:Jnt_Toe1_Knuckle_02_R
+    100090: DemonCroc_Rig:Jnt_Toe1_Knuckle_03_L
+    100092: DemonCroc_Rig:Jnt_Toe1_Knuckle_03_R
+    100094: DemonCroc_Rig:Jnt_Toe1_Tip_L
+    100096: DemonCroc_Rig:Jnt_Toe1_Tip_R
+    100098: DemonCroc_Rig:Jnt_Toe2_Knuckle_01_L
+    100100: DemonCroc_Rig:Jnt_Toe2_Knuckle_01_R
+    100102: DemonCroc_Rig:Jnt_Toe2_Knuckle_02_L
+    100104: DemonCroc_Rig:Jnt_Toe2_Knuckle_02_R
+    100106: DemonCroc_Rig:Jnt_Toe2_Knuckle_03_L
+    100108: DemonCroc_Rig:Jnt_Toe2_Knuckle_03_R
+    100110: DemonCroc_Rig:Jnt_Toe2_Tip_L
+    100112: DemonCroc_Rig:Jnt_Toe2_Tip_R
+    100114: DemonCroc_Rig:Jnt_Toe3_Knuckle_01_L
+    100116: DemonCroc_Rig:Jnt_Toe3_Knuckle_01_R
+    100118: DemonCroc_Rig:Jnt_Toe3_Knuckle_02_L
+    100120: DemonCroc_Rig:Jnt_Toe3_Knuckle_02_R
+    100122: DemonCroc_Rig:Jnt_Toe3_Knuckle_03_L
+    100124: DemonCroc_Rig:Jnt_Toe3_Knuckle_03_R
+    100126: DemonCroc_Rig:Jnt_Toe3_Tip_L
+    100128: DemonCroc_Rig:Jnt_Toe3_Tip_R
+    100130: DemonCroc_Rig:Jnt_Wrist_L
+    100132: DemonCroc_Rig:Jnt_Wrist_R
+    100134: DemonCroc_Rig:joint10
+    100136: DemonCroc_Rig:joint11
+    100138: DemonCroc_Rig:joint12
+    100140: DemonCroc_Rig:joint8
+    100142: DemonCroc_Rig:joint9
+    100144: DemonCroc_Rig:Pelvis
+    100146: DemonCroc_Rig:Sk_DemonCrocodile_01_Physics
+    100148: DemonCroc_Rig:transform1
+    400000: //RootNode
+    400002: DemonCroc_Rig:Jnt_Ankle_L
+    400004: DemonCroc_Rig:Jnt_Ankle_R
+    400006: DemonCroc_Rig:Jnt_Clavical_L
+    400008: DemonCroc_Rig:Jnt_Clavical_R
+    400010: DemonCroc_Rig:Jnt_Elbow_L
+    400012: DemonCroc_Rig:Jnt_Elbow_R
+    400014: DemonCroc_Rig:Jnt_Eye_L
+    400016: DemonCroc_Rig:Jnt_Eye_R
+    400018: DemonCroc_Rig:Jnt_Finger1_Knuckle_L
+    400020: DemonCroc_Rig:Jnt_Finger1_Knuckle_R
+    400022: DemonCroc_Rig:Jnt_Finger1_Tip_L
+    400024: DemonCroc_Rig:Jnt_Finger1_Tip_R
+    400026: DemonCroc_Rig:Jnt_Finger2_Knuckle_L
+    400028: DemonCroc_Rig:Jnt_Finger2_Knuckle_R
+    400030: DemonCroc_Rig:Jnt_Finger2_Tip_L
+    400032: DemonCroc_Rig:Jnt_Finger2_Tip_R
+    400034: DemonCroc_Rig:Jnt_Finger3_Knuckle_L
+    400036: DemonCroc_Rig:Jnt_Finger3_Knuckle_R
+    400038: DemonCroc_Rig:Jnt_Finger3_Tip_L
+    400040: DemonCroc_Rig:Jnt_Finger3_Tip_R
+    400042: DemonCroc_Rig:Jnt_Foot_L
+    400044: DemonCroc_Rig:Jnt_Foot_R
+    400046: DemonCroc_Rig:Jnt_Head
+    400048: DemonCroc_Rig:Jnt_Heel_L
+    400050: DemonCroc_Rig:Jnt_Heel_R
+    400052: DemonCroc_Rig:Jnt_Hip_L
+    400054: DemonCroc_Rig:Jnt_Hip_R
+    400056: DemonCroc_Rig:Jnt_Jaw_Base
+    400058: DemonCroc_Rig:Jnt_Jaw_Tip
+    400060: DemonCroc_Rig:Jnt_Knee_L
+    400062: DemonCroc_Rig:Jnt_Knee_R
+    400064: DemonCroc_Rig:Jnt_Neck
+    400066: DemonCroc_Rig:Jnt_Palm_L
+    400068: DemonCroc_Rig:Jnt_Palm_R
+    400070: DemonCroc_Rig:Jnt_Shoulder_L
+    400072: DemonCroc_Rig:Jnt_Shoulder_R
+    400074: DemonCroc_Rig:Jnt_Spine_1
+    400076: DemonCroc_Rig:Jnt_Spine_2
+    400078: DemonCroc_Rig:Jnt_Spine_3
+    400080: DemonCroc_Rig:Jnt_Tail_Head
+    400082: DemonCroc_Rig:Jnt_Toe1_Knuckle_01_L
+    400084: DemonCroc_Rig:Jnt_Toe1_Knuckle_01_R
+    400086: DemonCroc_Rig:Jnt_Toe1_Knuckle_02_L
+    400088: DemonCroc_Rig:Jnt_Toe1_Knuckle_02_R
+    400090: DemonCroc_Rig:Jnt_Toe1_Knuckle_03_L
+    400092: DemonCroc_Rig:Jnt_Toe1_Knuckle_03_R
+    400094: DemonCroc_Rig:Jnt_Toe1_Tip_L
+    400096: DemonCroc_Rig:Jnt_Toe1_Tip_R
+    400098: DemonCroc_Rig:Jnt_Toe2_Knuckle_01_L
+    400100: DemonCroc_Rig:Jnt_Toe2_Knuckle_01_R
+    400102: DemonCroc_Rig:Jnt_Toe2_Knuckle_02_L
+    400104: DemonCroc_Rig:Jnt_Toe2_Knuckle_02_R
+    400106: DemonCroc_Rig:Jnt_Toe2_Knuckle_03_L
+    400108: DemonCroc_Rig:Jnt_Toe2_Knuckle_03_R
+    400110: DemonCroc_Rig:Jnt_Toe2_Tip_L
+    400112: DemonCroc_Rig:Jnt_Toe2_Tip_R
+    400114: DemonCroc_Rig:Jnt_Toe3_Knuckle_01_L
+    400116: DemonCroc_Rig:Jnt_Toe3_Knuckle_01_R
+    400118: DemonCroc_Rig:Jnt_Toe3_Knuckle_02_L
+    400120: DemonCroc_Rig:Jnt_Toe3_Knuckle_02_R
+    400122: DemonCroc_Rig:Jnt_Toe3_Knuckle_03_L
+    400124: DemonCroc_Rig:Jnt_Toe3_Knuckle_03_R
+    400126: DemonCroc_Rig:Jnt_Toe3_Tip_L
+    400128: DemonCroc_Rig:Jnt_Toe3_Tip_R
+    400130: DemonCroc_Rig:Jnt_Wrist_L
+    400132: DemonCroc_Rig:Jnt_Wrist_R
+    400134: DemonCroc_Rig:joint10
+    400136: DemonCroc_Rig:joint11
+    400138: DemonCroc_Rig:joint12
+    400140: DemonCroc_Rig:joint8
+    400142: DemonCroc_Rig:joint9
+    400144: DemonCroc_Rig:Pelvis
+    400146: DemonCroc_Rig:Sk_DemonCrocodile_01_Physics
+    400148: DemonCroc_Rig:transform1
+    2100000: DemonCroc_Rig_StingrayPBS7
+    4300000: DemonCroc_Rig:Sk_DemonCrocodile_01_Physics
+    7400000: Walk2
+    9500000: //RootNode
+    13700000: DemonCroc_Rig:Sk_DemonCrocodile_01_Physics
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -3880,7 +3880,7 @@ MonoBehaviour:
   patrolPoints: []
   playerKillPos: {fileID: 0}
   timeToTransform: 0
-  timeToTransformMax: 30
+  timeToTransformMax: 25
   timeToRevert: 0
   timeToRevertMax: 0
   scale: 3
@@ -7200,7 +7200,7 @@ MonoBehaviour:
   - {fileID: 1116457462}
   playerKillPos: {fileID: 0}
   timeToTransform: 0
-  timeToTransformMax: 20
+  timeToTransformMax: 40
   timeToRevert: 0
   timeToRevertMax: 0
   scale: 4
