@@ -172,10 +172,9 @@ public class Items : MonoBehaviour
             Spray.Play();
         }
 
-        if (Physics.SphereCast(ray, SphereRadius, out hit, rayDistance))
-        {
-            if(BottleAcquired == true)
-            {
+        if(BottleAcquired == true) {
+            if (Physics.SphereCast(ray, SphereRadius, out hit, rayDistance))
+            {                
                 if (hit.collider.tag == "PlushieCroc" && Spray.isPlaying) {
 
                     if (Croc.timeToTransform < Croc.timeToTransformMax) {
@@ -184,6 +183,7 @@ public class Items : MonoBehaviour
                         Croc.PlayFeedback();
                     }
                 }
+                
             }
         }
     }
