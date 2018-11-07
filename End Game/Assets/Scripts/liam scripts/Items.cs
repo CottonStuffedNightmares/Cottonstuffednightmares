@@ -103,6 +103,18 @@ public class Items : MonoBehaviour
             }
         }
 
+        if (Input.GetAxis("Mouse ScrollWheel") > 0) {
+            if (currentItem == ITEMTYPE.TEAPOT) {
+                SwitchItem(2);
+            }
+        }
+
+        if (Input.GetAxis("Mouse ScrollWheel") < 0) {
+            if (currentItem == ITEMTYPE.SPRAYBOTTLE) {
+                SwitchItem(4);
+            }
+        }
+
        // // USE ITEM ON LEFT CLICK
        // if (currentItem == ITEMTYPE.NONE) {
        //     return;
@@ -173,10 +185,8 @@ public class Items : MonoBehaviour
         }
 
         if(BottleAcquired == true) {
-            if (Physics.SphereCast(ray, SphereRadius, out hit, rayDistance))
-            {                
+            if (Physics.SphereCast(ray, SphereRadius, out hit, rayDistance)) {                
                 if (hit.collider.tag == "PlushieCroc" && Spray.isPlaying) {
-
                     if (Croc.timeToTransform < Croc.timeToTransformMax) {
                         Croc.timeToTransform = Croc.timeToTransformMax;
 
@@ -199,7 +209,6 @@ public class Items : MonoBehaviour
         if (TeapotAcquired == true) {
             if (Physics.SphereCast(ray, SphereRadius, out hit, rayDistance)) {
                 if (hit.collider.tag == "PlushieBear" && Pouring.isPlaying) {
-
                     if (tBear.timeToTransform < tBear.timeToTransformMax) {
                         tBear.timeToTransform = tBear.timeToTransformMax;
 

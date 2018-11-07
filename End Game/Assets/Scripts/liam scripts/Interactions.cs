@@ -15,7 +15,7 @@ public class Interactions : MonoBehaviour
 
     //Raycast Pickups
     public Camera Cam;
-    public float rayDistance = 10;
+    public float rayDistance = 15;
     private float RayLine = 15f;
     private float SphereRadius;
     //private int layerMask;
@@ -64,11 +64,12 @@ public class Interactions : MonoBehaviour
         //}
 
         //Interactions
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetMouseButtonDown(0))
         {
             Interact();
             AnimalInteract();
         }
+
 
         LookAt();
 	}
