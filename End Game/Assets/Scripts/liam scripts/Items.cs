@@ -179,7 +179,7 @@ public class Items : MonoBehaviour
                 if (hit.collider.tag == "PlushieCroc" && Spray.isPlaying) {
 
                     if (Croc.timeToTransform < Croc.timeToTransformMax) {
-                        Croc.timeToTransform += (replenishTimer * 0.25f);
+                        Croc.timeToTransform = Croc.timeToTransformMax;
 
                         Croc.PlayFeedback();
                     }
@@ -201,7 +201,7 @@ public class Items : MonoBehaviour
                 if (hit.collider.tag == "PlushieBear" && Pouring.isPlaying) {
 
                     if (tBear.timeToTransform < tBear.timeToTransformMax) {
-                        tBear.timeToTransform += (replenishTimer * 0.25f);
+                        tBear.timeToTransform = tBear.timeToTransformMax;
 
                         tBear.PlayFeedback();
                     }

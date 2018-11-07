@@ -80,8 +80,6 @@ public class Interactions : MonoBehaviour
         RaycastHit hit;
         Ray ray = Cam.ScreenPointToRay(Input.mousePosition);
         
-        //cheacks if the ray actualy hit something within a set distance
-        /*if (Physics.SphereCast(ray, SphereRadius, out hit, rayDistance))*/
         if (Physics.Raycast(ray, out hit, rayDistance))
         {
             //cheacks if you are able to pick up the object
@@ -209,7 +207,6 @@ public class Interactions : MonoBehaviour
         RaycastHit hit;
         Ray ray = Cam.ScreenPointToRay(Input.mousePosition);
 
-        //if (Physics.SphereCast(ray, SphereRadius, out hit, rayDistance)) {
         if (Physics.Raycast(ray, out hit, rayDistance)) {
             if (hit.collider.tag == "Pickup") {
                 //infoDisplay.DisplayTooltip("[E] Take " + hit.collider.name);
