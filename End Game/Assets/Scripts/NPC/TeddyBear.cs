@@ -26,6 +26,9 @@ public class TeddyBear : NPC
     private int PatrolIterator = 0;
     private Animator animat;
 
+    private Owl owl;
+    private Crocodile Croc;
+
     void Start ()
     {
         RB = GetComponent<Rigidbody>();
@@ -60,6 +63,8 @@ public class TeddyBear : NPC
         {
             timeToTransform -= Time.deltaTime;
         }
+
+        
 
         //=================================================================================
         // Timers  while in toy/demon form
@@ -215,6 +220,14 @@ public class TeddyBear : NPC
         {
             StopSearching();
             KillPlayer();
+        }
+        if (other.gameObject.tag == "Corcodile")
+        {
+            Physics.IgnoreCollision(this.GetComponent<Collider>(), Croc.GetComponent<Collider>());
+        }
+        if(other.gameObject.tag == "Owl")
+        {
+            Physics.IgnoreCollision(this.GetComponent<Collider>(), owl.GetComponent<Collider>());
         }
     }
 }

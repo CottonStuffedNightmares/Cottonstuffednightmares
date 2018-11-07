@@ -80,7 +80,7 @@ public class Owl : NPC
             animat.SetBool("isWalking", false);
             StopSearching();
             OwlTime -= 1;
-            Debug.Log(OwlTime);
+            //Debug.Log(OwlTime);
         }
         else if(OwlTime <= 0)
         { 

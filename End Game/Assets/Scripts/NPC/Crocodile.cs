@@ -37,6 +37,9 @@ public class Crocodile : NPC
     private GameObject toyCroc;
     private Animator animat;
 
+    private Owl owl;
+    private TeddyBear bear;
+
     [HideInInspector] public GameObject target;
 
     void Start()
@@ -235,6 +238,14 @@ public class Crocodile : NPC
         {
             StopSearching();
             KillPlayer();
+        }
+        if (other.gameObject.tag == "Bear")
+        {
+            Physics.IgnoreCollision(this.GetComponent<Collider>(), bear.GetComponent<Collider>());
+        }
+        if(other.gameObject.tag == "Owl")
+        {
+            Physics.IgnoreCollision(this.GetComponent<Collider>(), owl.GetComponent<Collider>());
         }
     }
 
