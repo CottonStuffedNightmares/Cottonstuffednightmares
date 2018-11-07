@@ -5,6 +5,7 @@ using UnityEngine;
 //=======================================================
 //  Created By Liam Gates
 //  Updates: Edward ngo
+//  - Callum Stirrup-Prazak
 //=======================================================
 
 public class Items : MonoBehaviour
@@ -27,7 +28,8 @@ public class Items : MonoBehaviour
     [HideInInspector] public bool WalkyAcquired;
     [HideInInspector] public bool TeapotAcquired;
 
-    public ParticleSystem Spray;
+    public ParticleSystem spray1;
+    public ParticleSystem spray2;
     public ParticleSystem Pouring;
 
     private float rayDistance = 10;
@@ -180,13 +182,17 @@ public class Items : MonoBehaviour
         RaycastHit hit;
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
 
-        if (!Spray.isPlaying) {
-            Spray.Play();
+        if (!spray1.isPlaying) {
+            spray1.Play();
+        }
+
+        if (!spray2.isPlaying){
+            spray2.Play();
         }
 
         if(BottleAcquired == true) {
             if (Physics.SphereCast(ray, SphereRadius, out hit, rayDistance)) {                
-                if (hit.collider.tag == "PlushieCroc" && Spray.isPlaying) {
+                if ((hit.collider.tag == "PlushieCroc" && spray1.isPlaying) || (hit.collider.tag == "PlushieCroc" && spray2.isPlaying)) {
                     if (Croc.timeToTransform < Croc.timeToTransformMax) {
                         Croc.timeToTransform = Croc.timeToTransformMax;
 
@@ -206,10 +212,14 @@ public class Items : MonoBehaviour
             Pouring.Play();
         }
 
-        if (TeapotAcquired == true) {
-            if (Physics.SphereCast(ray, SphereRadius, out hit, rayDistance)) {
-                if (hit.collider.tag == "PlushieBear" && Pouring.isPlaying) {
-                    if (tBear.timeToTransform < tBear.timeToTransformMax) {
+        if (TeapotAcquired == true)
+        {
+            if (Physics.SphereCast(ray, SphereRadius, out hit, rayDistance))
+            {
+                if (hit.collider.tag == "PlushieBear" && Pouring.isPlaying)
+                {
+                    if (tBear.timeToTransform < tBear.timeToTransformMax)
+                    {
                         tBear.timeToTransform = tBear.timeToTransformMax;
 
                         tBear.PlayFeedback();

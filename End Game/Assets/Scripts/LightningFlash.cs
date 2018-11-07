@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class LightningFlash : MonoBehaviour {
 
+    //---------------------------------
+    //Made By: Cappy (Callum Stirrup-Prazak)
+    //
+    //---------------------------------
+
     //Specifies The Game Object containing the lights used in lightning flashes
     [HideInInspector]
     public GameObject lightningFlash;
