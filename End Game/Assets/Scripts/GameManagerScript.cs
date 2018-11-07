@@ -77,7 +77,7 @@ public class GameManagerScript : MonoBehaviour
 
     public void SetGameOver() {
         Time.timeScale = 0;
-        GameTimer = 0;
+        //GameTimer = 0;
         YouDied.SetActive(true);
     }
 

@@ -176,7 +176,6 @@ public class Items : MonoBehaviour
         {
             if(BottleAcquired == true)
             {
-
                 if (hit.collider.tag == "PlushieCroc" && Spray.isPlaying) {
 
                     if (Croc.timeToTransform < Croc.timeToTransformMax) {
@@ -197,9 +196,8 @@ public class Items : MonoBehaviour
             Pouring.Play();
         }
 
-        if (Physics.SphereCast(ray, SphereRadius, out hit, rayDistance)) {
-            if (TeapotAcquired == true) {
-
+        if (TeapotAcquired == true) {
+            if (Physics.SphereCast(ray, SphereRadius, out hit, rayDistance)) {
                 if (hit.collider.tag == "PlushieBear" && Pouring.isPlaying) {
 
                     if (tBear.timeToTransform < tBear.timeToTransformMax) {

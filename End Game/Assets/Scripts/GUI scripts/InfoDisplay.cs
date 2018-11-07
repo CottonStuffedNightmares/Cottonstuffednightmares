@@ -259,6 +259,14 @@ public class InfoDisplay : MonoBehaviour {
         Color dBearAlpha = demon_BearIcon.color;
         dBearAlpha.a = 1 - pBearAlpha.a;
         demon_BearIcon.color = dBearAlpha;
+
+        if (Bear.timeToTransform <= 0) {
+            dBearAlpha.r = 1;
+            dBearAlpha.g = 0;
+            dBearAlpha.b = 0;
+            dBearAlpha.a = 1;
+            demon_BearIcon.color = dBearAlpha;
+        }
     }
 
     private void AdjustCrocIconAlpha() {
@@ -269,6 +277,14 @@ public class InfoDisplay : MonoBehaviour {
         Color dCrocAlpha = plushie_CrocIcon.color;
         dCrocAlpha.a = 1 - pCrocAlpha.a;
         demon_CrocIcon.color = dCrocAlpha;
+
+        if (Crocodile.timeToTransform <= 0) {
+            dCrocAlpha.r = 1;
+            dCrocAlpha.g = 0;
+            dCrocAlpha.b = 0;
+            dCrocAlpha.a = 1;
+            demon_CrocIcon.color = dCrocAlpha;
+        }
     }
 
     private void AdjustOwlIconAlpha() {
@@ -279,5 +295,13 @@ public class InfoDisplay : MonoBehaviour {
         Color dOwlAlpha = demon_OwlIcon.color;
         dOwlAlpha.a = 1 - pOwlAlpha.a;
         demon_OwlIcon.color = dOwlAlpha;
+
+        if (Owl.timeToTransform <= 0) {
+            dOwlAlpha.r = 1;
+            dOwlAlpha.g = 0;
+            dOwlAlpha.b = 0;
+            dOwlAlpha.a = 1;
+            demon_OwlIcon.color = dOwlAlpha;
+        }
     }
 }
