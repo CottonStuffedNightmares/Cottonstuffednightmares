@@ -105,15 +105,31 @@ public class Items : MonoBehaviour
             }
         }
 
+        // if teapot currently equipped
         if (Input.GetAxis("Mouse ScrollWheel") > 0) {
             if (currentItem == ITEMTYPE.TEAPOT) {
-                SwitchItem(2);
+                if (BottleAcquired) {
+                    SwitchItem(2);  
+                }
+            }
+
+            else if (currentItem == ITEMTYPE.SPRAYBOTTLE) {
+                SwitchItem(0);
             }
         }
 
+        // if bottle currently equipped
         if (Input.GetAxis("Mouse ScrollWheel") < 0) {
             if (currentItem == ITEMTYPE.SPRAYBOTTLE) {
-                SwitchItem(4);
+                if (TeapotAcquired) {
+                    SwitchItem(4);
+                }
+            }
+
+            else if (currentItem == ITEMTYPE.NONE) {
+                if (BottleAcquired) {
+                    SwitchItem(2);
+                }
             }
         }
 
