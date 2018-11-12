@@ -7,9 +7,22 @@ using UnityEngine.UI;
 public class Crocodile : NPC
 {
     private float VisDist = 30;
+    //Default look
+    private Vector3 origenCenter;
+    private Vector3 origenRight;
+    private Vector3 origenLeft;
+    private Vector3 origenUp;
+    private Vector3 origenDown;
+    //Extra look
+    private Vector3 origenUR;
+    private Vector3 origenUL;
+    private Vector3 origenDR;
+    private Vector3 origenDL;
 
     [SerializeField]
     private float yOffSet;
+    [SerializeField]
+    private float zOffSet;
 
 
     private Vector3 origen;
@@ -176,53 +189,89 @@ public class Crocodile : NPC
     public void VisualRange()
     {
         RaycastHit hit;
-        origen = new Vector3(transform.position.x, transform.position.y + yOffSet, transform.position.z);
+        //default look
+        origenCenter = new Vector3(transform.position.x, transform.position.y + yOffSet, transform.position.z);
+        origenRight = new Vector3(transform.position.x, transform.position.y + yOffSet, transform.position.z + zOffSet);
+        origenLeft = new Vector3(transform.position.x, transform.position.y + yOffSet, transform.position.z - zOffSet);
+        origenUp = new Vector3(transform.position.x, transform.position.y + yOffSet + 0.5f, transform.position.z);
+        origenDown = new Vector3(transform.position.x, transform.position.y + yOffSet - 0.5f, transform.position.z);
 
-        //forward
-        Debug.DrawRay(origen, transform.forward * VisDist, Color.red);
-        Debug.DrawRay(origen, (transform.forward + transform.right) * VisDist, Color.red);
-        Debug.DrawRay(origen, (transform.forward - transform.right) * VisDist, Color.red);
-        Debug.DrawRay(origen, (transform.forward + transform.up) * VisDist, Color.red);
-        Debug.DrawRay(origen, (transform.forward - transform.up) * VisDist, Color.red);
+        //Extra look
+        origenUR = new Vector3(transform.position.x, transform.position.y + yOffSet + 0.3f, transform.position.z + zOffSet - 0.5f);
+        origenUL = new Vector3(transform.position.x, transform.position.y + yOffSet + 0.3f, transform.position.z - zOffSet + 0.5f);
+        origenDR = new Vector3(transform.position.x, transform.position.y + yOffSet - 0.3f, transform.position.z + zOffSet - 0.5f);
+        origenDL = new Vector3(transform.position.x, transform.position.y + yOffSet - 0.3f, transform.position.z - zOffSet + 0.5f);
 
-        if (Physics.Raycast(origen, transform.forward, out hit, VisDist))
+        //Default look
+        Debug.DrawRay(origenCenter, transform.forward * VisDist, Color.red);
+        Debug.DrawRay(origenRight, transform.forward * VisDist, Color.red);
+        Debug.DrawRay(origenLeft, transform.forward * VisDist, Color.red);
+        Debug.DrawRay(origenUp, transform.forward * VisDist, Color.red);
+        Debug.DrawRay(origenDown, transform.forward * VisDist, Color.red);
+
+        //Extra look
+        Debug.DrawRay(origenUR, transform.forward * VisDist, Color.red);
+        Debug.DrawRay(origenUL, transform.forward * VisDist, Color.red);
+        Debug.DrawRay(origenDR, transform.forward * VisDist, Color.red);
+        Debug.DrawRay(origenDL, transform.forward * VisDist, Color.red);
+
+        if (Physics.Raycast(origenCenter, transform.forward, out hit, VisDist))
         {
-            if(hit.collider.tag == "Player" && isSearching)
+            if (hit.collider.tag == "Player" && isSearching)
             {
                 isSearching = false;
                 isHunting = true;
             }
-            else if(hit.collider.tag != "Player" && isHunting)
+            else if (hit.collider.tag != "Player" && isSearching)
             {
                 isHunting = false;
                 isSearching = true;
             }
         }
-        if (Physics.Raycast(origen, transform.forward + transform.right, out hit, VisDist))
+
+        if (Physics.Raycast(origenRight, transform.forward, out hit, VisDist) && Physics.Raycast(origenUR, transform.forward, out hit, VisDist))
         {
-            if(hit.collider.tag == "Player" && isSearching)
+            if (hit.collider.tag == "Player" && isSearching)
             {
                 isSearching = false;
                 isHunting = true;
             }
         }
-        if(Physics.Raycast(origen, transform.forward - transform.right, out hit, VisDist))
+        if (Physics.Raycast(origenRight, transform.forward, out hit, VisDist) && Physics.Raycast(origenDR, transform.forward, out hit, VisDist))
         {
-            if(hit.collider.tag == "Player" && isSearching)
+            if (hit.collider.tag == "Player" && isSearching)
             {
                 isSearching = false;
                 isHunting = true;
             }
         }
-        if(Physics.Raycast(origen, transform.forward + transform.up, out hit, VisDist))
+
+        if (Physics.Raycast(origenLeft, transform.forward, out hit, VisDist) && Physics.Raycast(origenUL, transform.forward, out hit, VisDist))
         {
-            if(hit.collider.tag == "Player" && isSearching)
+            if (hit.collider.tag == "Player" && isSearching)
             {
                 isSearching = false;
                 isHunting = true;
             }
         }
-        if (Physics.Raycast(origen, (transform.forward - transform.up), out hit, VisDist))
+        if (Physics.Raycast(origenLeft, transform.forward, out hit, VisDist) && Physics.Raycast(origenDL, transform.forward, out hit, VisDist))
+        {
+            if (hit.collider.tag == "Player" && isSearching)
+            {
+                isSearching = false;
+                isHunting = true;
+            }
+        }
+
+        if (Physics.Raycast(origenUp, transform.forward, out hit, VisDist))
+        {
+            if (hit.collider.tag == "Player" && isSearching)
+            {
+                isSearching = false;
+                isHunting = true;
+            }
+        }
+        if (Physics.Raycast(origenDown, transform.forward, out hit, VisDist))
         {
             if (hit.collider.tag == "Player" && isSearching)
             {
