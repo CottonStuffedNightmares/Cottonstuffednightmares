@@ -18,10 +18,12 @@ public class Menu : MonoBehaviour
     
     void Start()
     {
+        Time.timeScale = 1;
         mainMenuPanel.SetActive(true);
         controlsPanel.SetActive(false);
         creditsPanel.SetActive(false);
     }
+
     //Game Start
     public void StartGame()
     {
@@ -37,23 +39,21 @@ public class Menu : MonoBehaviour
     ///Toggles the Controls Panel
     public void ControlsToggle()
     {
-        if (controlsActive)
+        if (controlsPanel.activeSelf == false)
         {
-            mainMenuPanel.SetActive(false);
             controlsPanel.SetActive(true);
-            controlsActive = true;
+            creditsPanel.SetActive(false);
         }
         else
         {
-            mainMenuPanel.SetActive(true);
             controlsPanel.SetActive(false);
-            controlsActive = false;
         }
     }
 
     public void ToggleCreditsPanel() {
         if (creditsPanel.activeSelf == false) {
             creditsPanel.SetActive(true);
+            controlsPanel.SetActive(false);
         }
 
         else {
