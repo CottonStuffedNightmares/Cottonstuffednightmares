@@ -32,7 +32,7 @@ public class Items : MonoBehaviour
     public ParticleSystem spray2;
     public ParticleSystem Pouring;
 
-    private float rayDistance = 10;
+    private float rayDistance = 7;
     private float SphereRadius;
     private int replenishTimer;
 
