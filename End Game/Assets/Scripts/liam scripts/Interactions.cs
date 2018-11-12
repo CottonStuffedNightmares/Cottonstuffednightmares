@@ -15,7 +15,7 @@ public class Interactions : MonoBehaviour
 
     //Raycast Pickups
     public Camera Cam;
-    public float rayDistance = 15;
+    public float rayDistance = 10;
     private float RayLine = 15f;
     private float SphereRadius;
     //private int layerMask;
@@ -56,15 +56,8 @@ public class Interactions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //TorchLine();
-        //Changes the controlls if you're hiding
-        //if (isHiding)
-        //{
-        //    HiddenMove();
-        //}
-
         //Interactions
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.E)) 
         {
             Interact();
             AnimalInteract();
