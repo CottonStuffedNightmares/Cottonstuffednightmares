@@ -5797,9 +5797,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 369e087959830c64db84dd90b59bd6af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWalking: 0
-  currentDestination: {fileID: 0}
-  distOffset: 5
 --- !u!95 &826010048
 Animator:
   serializedVersion: 3
@@ -13655,9 +13652,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 369e087959830c64db84dd90b59bd6af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWalking: 0
-  currentDestination: {fileID: 0}
-  distOffset: 5
 --- !u!95 &1974011577
 Animator:
   serializedVersion: 3
@@ -14102,9 +14096,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 369e087959830c64db84dd90b59bd6af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWalking: 0
-  currentDestination: {fileID: 0}
-  distOffset: 5
 --- !u!95 &2002166459
 Animator:
   serializedVersion: 3

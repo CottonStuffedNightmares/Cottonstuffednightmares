@@ -102,7 +102,7 @@ public class InfoDisplay : MonoBehaviour {
             if (items.BottleAcquired) {
                 if (!items.TeapotAcquired && !tutorialMsg2Played) {
                     DisplayMessage(tutorialMsg2, 3);
-                    CountdownTimer.text = "Find teacup!";
+                    CountdownTimer.text = "Find Teapot!";
                     tutorialMsg2Played = true;
                 }               
             }

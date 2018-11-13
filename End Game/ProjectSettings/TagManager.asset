@@ -24,6 +24,7 @@ TagManager:
   - PlushieCroc
   - LightningFlash
   - Flash Controller
+  - BearEye
   layers:
   - Default
   - TransparentFX
