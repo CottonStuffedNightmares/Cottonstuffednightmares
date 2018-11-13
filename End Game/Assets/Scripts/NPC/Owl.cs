@@ -16,7 +16,6 @@ public class Owl : NPC
 
     public float OwlTime;
     private Animator animat;
-    private bool isDemon;
 
     void Start()
     {
@@ -77,6 +76,7 @@ public class Owl : NPC
         // when in TOY form, and not 'taken care of' and countdown reaches 0, transform to demon
         if (OwlTime >= 0)
         {
+            animat.SetBool("isAttacking", false);
             animat.SetBool("isWalking", false);
             StopSearching();
             OwlTime -= 1;
@@ -86,6 +86,7 @@ public class Owl : NPC
         { 
             if (isSearching)
             {
+                animat.SetBool("isAttacking", false);
                 animat.SetBool("isWalking", true);
                 FollowPlayer();
             }
@@ -161,12 +162,24 @@ public class Owl : NPC
         // DO PATROL STUFF
     }
 
+    public void PlayAnimation()
+    {
+        animat.SetBool("isAttacking", true);
+    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
             StopSearching();
+            PlayAnimation();
+        }
+    }
+
+    private void OnCollisionEnter(Collision coll)
+    {
+       if(coll.gameObject.tag == "Player")
+        {
             KillPlayer();
         }
     }

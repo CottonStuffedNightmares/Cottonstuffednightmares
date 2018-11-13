@@ -16,6 +16,7 @@ public class NPC : MonoBehaviour {
     public ParticleSystem FeedbackParticle;
     public bool isSearching;
     public bool isHunting;
+    public bool isDemon;
 
     public Transform[] patrolPoints;           // list of points npc will patrol to
     //public List<Transform> patrolPoints;
@@ -31,9 +32,11 @@ public class NPC : MonoBehaviour {
     public float scale;
     //public bool inToyForm;                 
     
-    void Start () {
+    void Start ()
+    {
         isSearching = false;
         isHunting = false;
+        isDemon = false;
         //inToyForm = true;
     }
 

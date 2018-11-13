@@ -28,6 +28,7 @@ public class TeddyBear : NPC
     private float MoveSpeed;
 
     private GameObject player;
+    private GameObject BearPos;
     private Rigidbody RB;
     private NavMeshAgent NMA;
 
@@ -38,6 +39,7 @@ public class TeddyBear : NPC
     private Vector3 SeekPosition = Vector3.zero;
     private int PatrolIterator = 0;
     private Animator animat;
+    private float DeathTime;
 
     private Owl owl;
     private Crocodile Croc;
@@ -47,6 +49,7 @@ public class TeddyBear : NPC
         RB = GetComponent<Rigidbody>();
         NMA = GetComponent<NavMeshAgent>();
         player = GameObject.Find("FPSController");
+        BearPos = GameObject.FindGameObjectWithTag("BearEye");
 
         game = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManagerScript>();
         animat = GetComponent<Animator>();
@@ -56,9 +59,11 @@ public class TeddyBear : NPC
         coll.enabled = !coll.enabled;
 
         MoveSpeed = 10f;
+        DeathTime = 0.3f;
 
         timeToTransform = timeToTransformMax;
 
+        isDemon = false;
         isSearching = false;
 
         SeekPosition = transform.position;
@@ -87,6 +92,11 @@ public class TeddyBear : NPC
         if (timeToTransform <= 0 && !isSearching)
         {
             DemonForm();
+            if(!isDemon)
+            {
+                coll.enabled = !coll.enabled;
+                isDemon = true;
+            }
         }
 
         ReachedTarget = NMA.remainingDistance < 0.2f;
@@ -105,7 +115,6 @@ public class TeddyBear : NPC
     {
         transform.GetChild(0).gameObject.SetActive(true);
         transform.GetChild(1).gameObject.SetActive(false);
-        coll.enabled = !coll.enabled;
         NMA.isStopped = false;
         isSearching = true;
         RB.AddForce(0, MoveSpeed, 0);
@@ -122,6 +131,7 @@ public class TeddyBear : NPC
 
     public void FollowPlayer()
     {
+        animat.SetBool("isAttacking", false);
         animat.SetBool("isWalking", false);
         animat.SetBool("isRunning", true);
         NMA.speed = 100;
@@ -135,23 +145,31 @@ public class TeddyBear : NPC
         isSearching = false;
     }
 
-    public void KillPlayer() {
+    public void KillPlayer()
+    {
         // CALL CAMERA FUNTION FROM PLAYER SCRIPT
         // PUT PLAYER INFRONT OF MONSTER
         //playerCam.transform.position = playerKillPos.position;
-
+        RB.velocity = new Vector3(0, 0, 0);
+        NMA.isStopped = true;
+        isSearching = false;
         // GET PLAYER TO FACE MONSTER
         //I AM HERE
+        player.transform.LookAt(BearPos.transform.position);
 
         // PLAY KILL ANIMATION
-        game.isGameOver = true;
-        // SET GAMEOVER THINGS
+        if (DeathTime <= 0)
+        {
+            game.isGameOver = true;
+        }
+            // SET GAMEOVER THINGS
     }
 
     public void Patrol()
     {
         // DO PATROL STUFF
         NMA.speed = 3;
+        animat.SetBool("isAttacking", false);
         animat.SetBool("isWalking", true);
         animat.SetBool("isRunning", false);
         if (ReachedTarget)
@@ -266,17 +284,18 @@ public class TeddyBear : NPC
 
     private void OnTriggerEnter(Collider other)
     {
-
         if (other.gameObject.tag == "Player")
         {
             StopSearching();
+            DeathTime -= 0.1f;
+            animat.SetBool("isAttacking", true);
             KillPlayer();
         }
         if (other.gameObject.tag == "Corcodile")
         {
             Physics.IgnoreCollision(this.GetComponent<Collider>(), Croc.GetComponent<Collider>());
         }
-        if(other.gameObject.tag == "Owl")
+        if (other.gameObject.tag == "Owl")
         {
             Physics.IgnoreCollision(this.GetComponent<Collider>(), owl.GetComponent<Collider>());
         }

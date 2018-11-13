@@ -70,6 +70,7 @@ public class Crocodile : NPC
 
         timeToTransform = timeToTransformMax;
 
+        isDemon = false;
         isSearching = false;
 
         SeekPosition = transform.position;
@@ -103,6 +104,11 @@ public class Crocodile : NPC
         if (timeToTransform <= 0 && !isSearching )
         {
             DemonForm();
+            if (!isDemon)
+            {
+                coll.enabled = !coll.enabled;
+                isDemon = true;
+            }
         }
 
         ReachedTarget = NMA.remainingDistance < 0.2f;
