@@ -39,6 +39,7 @@ public class Crocodile : NPC
 
     //public GameObject plushieCroc;
     private GameObject player;
+    private GameObject BearPos;
     private Rigidbody RB;
 
     private NavMeshAgent NMA;
@@ -60,6 +61,7 @@ public class Crocodile : NPC
         RB = GetComponent<Rigidbody>();
         NMA = GetComponent<NavMeshAgent>();
         player = GameObject.Find("FPSController");
+        BearPos = GameObject.FindGameObjectWithTag("BearEye");
 
         game = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManagerScript>();
         animat = GetComponent<Animator>();
@@ -162,7 +164,7 @@ public class Crocodile : NPC
         // CALL CAMERA FUNTION FROM PLAYER SCRIPT
         // PUT PLAYER INFRONT OF MONSTER
         //playerCam.transform.position = playerKillPos.position;
-
+        player.transform.LookAt(BearPos.transform.position);
         // GET PLAYER TO FACE MONSTER
         //I AM HERE
 
@@ -227,11 +229,6 @@ public class Crocodile : NPC
             {
                 isSearching = false;
                 isHunting = true;
-            }
-            else if (hit.collider.tag != "Player" && isSearching)
-            {
-                isHunting = false;
-                isSearching = true;
             }
         }
 
