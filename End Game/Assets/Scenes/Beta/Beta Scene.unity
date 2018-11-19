@@ -41701,6 +41701,7 @@ GameObject:
   - component: {fileID: 1104748118}
   - component: {fileID: 1104748120}
   - component: {fileID: 1104748119}
+  - component: {fileID: 1104748121}
   m_Layer: 0
   m_Name: SM_Wall_008_Physics
   m_TagString: Untagged
@@ -41765,6 +41766,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1104748117}
   m_Mesh: {fileID: 4300010, guid: 829c0f4d892995b439db8dd5e241db85, type: 3}
+--- !u!65 &1104748121
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1104748117}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.039923094, y: 2.5, z: 1.524383}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1111506432
 GameObject:
   m_ObjectHideFlags: 0
@@ -60472,6 +60485,10 @@ Prefab:
         type: 2}
       propertyPath: MinDistance
       value: 6.2945366
+      objectReference: {fileID: 0}
+    - target: {fileID: 1971412616305000, guid: 3c06d5e0422055b45bec8c3d7d607b30, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c06d5e0422055b45bec8c3d7d607b30, type: 2}
