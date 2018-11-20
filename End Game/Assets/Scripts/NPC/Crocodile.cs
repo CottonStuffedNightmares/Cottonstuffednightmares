@@ -288,6 +288,7 @@ public class Crocodile : NPC
     {
         if (other.gameObject.tag == "Player")
         {
+            animat.SetBool("isAttacking", true);
             StopSearching();
             KillPlayer();
         }

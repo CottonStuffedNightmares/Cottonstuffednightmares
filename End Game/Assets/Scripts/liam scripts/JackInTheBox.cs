@@ -10,15 +10,18 @@ public class JackInTheBox : MonoBehaviour
     private float timesEntered;
     private GameManagerScript game;
 
-    [SerializeField]private AudioSource windup;
-    [SerializeField]private AudioSource death;
+    Animator animat;
+
+    public AudioSource windup;
+    public AudioSource death;
 
     private void Start()
     {
         timesEntered = 0;
-        Timer = 60;
+        Timer = 5;
         countDownTimer = Timer;
         game = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManagerScript>();
+        animat = GetComponent<Animator>();
     }
 
     private void Update()
@@ -28,11 +31,14 @@ public class JackInTheBox : MonoBehaviour
             if (countDownTimer <= 0)
             {
                 windup.Stop();
-                death.Play();
+                animat.SetBool("isCranking", false);
+                animat.SetBool("isAttacking", true);
                 KillPlayer();
             }
             else if (countDownTimer > 0)
             {
+                animat.SetBool("isAttacking", false);
+                animat.SetBool("isCranking", true);
                 countDownTimer -= Time.deltaTime;
             }
         }
@@ -41,6 +47,7 @@ public class JackInTheBox : MonoBehaviour
 
     void KillPlayer()
     {
+        death.Play();
         game.isGameOver = true;
     }
 

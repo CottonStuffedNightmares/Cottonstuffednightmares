@@ -17,11 +17,14 @@ public class Owl : NPC
     public float OwlTime;
     private Animator animat;
 
+    private GameObject BearPos;
+
     void Start()
     {
         RB = GetComponent<Rigidbody>();
         NMA = GetComponent<NavMeshAgent>();
         player = GameObject.Find("FPSController");
+        BearPos = GameObject.FindGameObjectWithTag("BearEye");
 
         game = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManagerScript>();
         Inter = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Interactions>();
@@ -148,7 +151,7 @@ public class Owl : NPC
         // CALL CAMERA FUNTION FROM PLAYER SCRIPT
         // PUT PLAYER INFRONT OF MONSTER
         //playerCam.transform.position = playerKillPos.position;
-
+        player.transform.LookAt(BearPos.transform.position);
         // GET PLAYER TO FACE MONSTER
         //I AM HERE
 
@@ -173,13 +176,6 @@ public class Owl : NPC
         {
             StopSearching();
             PlayAnimation();
-        }
-    }
-
-    private void OnCollisionEnter(Collision coll)
-    {
-       if(coll.gameObject.tag == "Player")
-        {
             KillPlayer();
         }
     }
